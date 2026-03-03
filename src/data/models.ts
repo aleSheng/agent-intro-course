@@ -42,12 +42,19 @@ export const models: AIModel[] = [
     strength: "超长上下文记忆",
     useCase: "一次性喂入整本书/整个代码库做分析",
   },
+  {
+    name: "DeepSeek R1",
+    provider: "DeepSeek",
+    color: "#4d6bfe",
+    strength: "开源推理之王，性价比极高",
+    useCase: "推理密集任务、预算敏感场景",
+  },
 ];
 
 export interface Tool {
   name: string;
   description: string;
-  category: "terminal-agent" | "ai-ide" | "no-code" | "knowledge";
+  category: "terminal-agent" | "ai-ide" | "knowledge";
 }
 
 export const tools: Tool[] = [
@@ -57,14 +64,13 @@ export const tools: Tool[] = [
   { name: "Kimi Claw", description: "月之暗面出品，擅长处理超长上下文的代码项目", category: "terminal-agent" },
   { name: "MaxClaw", description: "极致自动化，擅长端到端完成复杂工程任务", category: "terminal-agent" },
   // AI IDEs
-  { name: "Trae", description: "字节跳动出品的AI IDE，多文件Composer能力强", category: "ai-ide" },
+  { name: "Trae", description: "字节跳动出品的AI IDE，免费，多文件Composer能力强", category: "ai-ide" },
   { name: "VSCode + AI", description: "最广泛的开发者生态，Copilot/Cline等插件丰富", category: "ai-ide" },
   { name: "Cursor", description: "原生AI IDE标杆，适合沉浸式Vibe Coding", category: "ai-ide" },
   { name: "Windsurf", description: "下一代 AI IDE，深度集成 Agent 能力", category: "ai-ide" },
-  // No-code
-  { name: "扣子(Coze)", description: "字节系，拖拽式搭建，发布即上线，中文生态丰富", category: "no-code" },
-  { name: "Dify", description: "开源，适合私有化部署，企业级Agent搭建", category: "no-code" },
   // Knowledge
   { name: "NotebookLM", description: "Google出品，论文/书籍秒变播客和交互式笔记", category: "knowledge" },
   { name: "Kimi", description: "超长上下文，把整本书/整个项目变成你的私人顾问", category: "knowledge" },
+  { name: "Perplexity", description: "AI原生搜索引擎，深度研究自动出报告", category: "knowledge" },
+  { name: "ChatGPT / Claude", description: "通用对话，深度推理与写作最强底座", category: "knowledge" },
 ];

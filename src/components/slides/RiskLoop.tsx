@@ -30,7 +30,7 @@ export function RiskLoop() {
                   strokeDasharray="40 400"
                   strokeLinecap="round"
                   style={{
-                    animation: "spin 2s linear infinite",
+                    animation: "orbit 2s linear infinite",
                     transformOrigin: "200px 200px",
                   }}
                 />
@@ -71,12 +71,6 @@ export function RiskLoop() {
         </AnimatedText>
       </div>
 
-      <style>{`
-        @keyframes spin {
-          from { transform: rotate(0deg); }
-          to { transform: rotate(360deg); }
-        }
-      `}</style>
     </div>
   );
 }

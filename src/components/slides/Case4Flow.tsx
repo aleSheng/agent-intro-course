@@ -1,10 +1,9 @@
 import { AnimatedText } from "@/components/shared/AnimatedText";
 
 const steps = [
-  { icon: "🎭", title: "设定人设 Prompt", desc: "定义 Bot 的性格和能力边界", color: "#a855f7" },
-  { icon: "📚", title: "挂载知识库 (RAG)", desc: "上传专业资料作为知识源", color: "#3b82f6" },
-  { icon: "🔌", title: "接入搜索插件", desc: "让 Bot 能联网获取实时信息", color: "#22c55e" },
-  { icon: "🚀", title: "发布上线", desc: "一键发布，生成分享链接", color: "#f59e0b" },
+  { icon: "💬", title: "用自然语言描述需求", desc: "告诉 AI 你想要什么，不需要写一行代码", color: "#a855f7" },
+  { icon: "🤖", title: "Agent 自动生成", desc: "AI 写代码、创建文件、安装依赖、运行调试", color: "#3b82f6" },
+  { icon: "👀", title: "预览并调整", desc: "看到效果后继续用自然语言修改：「把按钮改大」「换个颜色」", color: "#22c55e" },
 ];
 
 export function Case4Flow() {
@@ -12,38 +11,48 @@ export function Case4Flow() {
     <div className="slide module-2 bg-[#0a0a0b] px-20">
       <AnimatedText delay={200}>
         <h2 className="text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
-          搭建流程：全部拖拽完成
+          非程序员的使用流程
         </h2>
-        <p className="text-xl text-[#a1a1aa] mb-16 self-start">
-          示例：搭建一个"毒舌考研规划师" Bot
+        <p className="text-xl text-[#a1a1aa] mb-14 self-start">
+          全程只需要<strong className="text-[#f5f5f5]">说人话</strong> —— 示例：用 Cursor 做一个个人简历网站
         </p>
       </AnimatedText>
 
-      <div className="flex gap-6 w-full">
+      <div className="flex gap-8 w-full">
         {steps.map((step, i) => (
           <AnimatedText key={i} delay={500 + i * 400} className="flex-1">
             <div className="relative">
               <div
-                className="bg-[#141416] border border-[#27272a] rounded-2xl p-8 text-center hover:border-opacity-50 transition-all"
+                className="bg-[#141416] border border-[#27272a] rounded-2xl p-10 text-center"
                 style={{ borderColor: `${step.color}30` }}
               >
                 <div className="text-sm font-mono text-[#71717a] mb-4">Step {i + 1}</div>
                 <div
-                  className="w-16 h-16 rounded-2xl mx-auto mb-5 flex items-center justify-center text-3xl"
+                  className="w-20 h-20 rounded-2xl mx-auto mb-6 flex items-center justify-center text-4xl"
                   style={{ backgroundColor: `${step.color}15` }}
                 >
                   {step.icon}
                 </div>
-                <h3 className="text-xl font-bold text-[#f5f5f5] mb-3">{step.title}</h3>
-                <p className="text-base text-[#a1a1aa]">{step.desc}</p>
+                <h3 className="text-2xl font-bold text-[#f5f5f5] mb-3">{step.title}</h3>
+                <p className="text-lg text-[#a1a1aa]">{step.desc}</p>
               </div>
               {i < steps.length - 1 && (
-                <div className="absolute top-1/2 -right-4 text-2xl text-[#27272a] z-10">→</div>
+                <div className="absolute top-1/2 -right-5 text-2xl text-[#27272a] z-10">→</div>
               )}
             </div>
           </AnimatedText>
         ))}
       </div>
+
+      <AnimatedText delay={2000}>
+        <div className="mt-12 flex items-center gap-4 w-full">
+          <div className="flex-1 h-px bg-gradient-to-r from-transparent via-accent-purple/30 to-transparent" />
+          <p className="text-xl text-accent-purple font-semibold px-6">
+            你不是在"学编程"，你是在"指挥 AI 编程"
+          </p>
+          <div className="flex-1 h-px bg-gradient-to-r from-transparent via-accent-purple/30 to-transparent" />
+        </div>
+      </AnimatedText>
     </div>
   );
 }

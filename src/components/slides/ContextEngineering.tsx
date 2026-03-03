@@ -47,11 +47,16 @@ export function ContextEngineering() {
       </div>
 
       <AnimatedText delay={1500}>
-        <div className="mt-10 text-center">
-          <p className="text-2xl text-[#f5f5f5] font-semibold">
+        <div className="mt-10 flex items-center gap-6 w-full">
+          <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#27272a] to-transparent" />
+          <p className="text-2xl text-[#f5f5f5] font-semibold shrink-0">
             越会描述需求的人，Agent 为你创造的价值越大
           </p>
+          <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#27272a] to-transparent" />
         </div>
+        <p className="text-lg text-[#71717a] mt-4 text-center w-full">
+          不是"让 AI 听懂你"——而是"给 AI 足够的上下文，让它做出正确判断"
+        </p>
       </AnimatedText>
     </div>
   );

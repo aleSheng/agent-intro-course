@@ -6,7 +6,7 @@ export function Case2Cover() {
       <div className="text-center max-w-[1400px]">
         <AnimatedText delay={200}>
           <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-accent-purple/10 border border-accent-purple/30 mb-8">
-            <span className="text-lg font-mono text-accent-purple">案例 02</span>
+            <span className="text-lg font-mono text-accent-purple">Vibe Coding</span>
           </div>
         </AnimatedText>
         <AnimatedText delay={500}>

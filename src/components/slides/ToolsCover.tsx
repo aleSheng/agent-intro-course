@@ -21,7 +21,7 @@ export function ToolsCover() {
         </AnimatedText>
         <AnimatedText delay={1400}>
           <div className="mt-12 flex justify-center gap-8">
-            {["⌨️ 终端Agent", "🖥️ AI IDE", "🧩 无代码", "📚 知识平台"].map((label, i) => (
+            {["⌨️ 终端 Agent", "🖥️ AI IDE", "📚 知识平台"].map((label, i) => (
               <div
                 key={i}
                 className="px-6 py-3 bg-[#141416] border border-[#27272a] rounded-xl text-xl text-[#a1a1aa] animate-fade-in-up"
@@ -31,6 +31,11 @@ export function ToolsCover() {
               </div>
             ))}
           </div>
+        </AnimatedText>
+        <AnimatedText delay={2200}>
+          <p className="mt-8 text-lg text-[#71717a]">
+            这些工具<strong className="text-[#a1a1aa]">不分"会编程"和"不会编程"</strong>—— 只要会说人话，就能用
+          </p>
         </AnimatedText>
       </div>
     </div>

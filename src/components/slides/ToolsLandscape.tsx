@@ -1,11 +1,10 @@
 import { AnimatedText } from "@/components/shared/AnimatedText";
 
 const workflow = [
-  { stage: "创意", tools: ["你的大脑", "ChatBot"], color: "#f5f5f5" },
+  { stage: "创意", tools: ["你的大脑", "ChatGPT / Claude"], color: "#f5f5f5" },
+  { stage: "研究", tools: ["Perplexity", "NotebookLM"], color: "#06b6d4" },
   { stage: "设计", tools: ["Cursor", "Trae"], color: "#3b82f6" },
-  { stage: "开发", tools: ["Claude Code", "OpenClaw"], color: "#a855f7" },
-  { stage: "测试", tools: ["Agent Loop", "自动修复"], color: "#f59e0b" },
-  { stage: "部署", tools: ["Vercel", "Coze"], color: "#22c55e" },
+  { stage: "开发 & 调试", tools: ["Claude Code", "Cursor Agent"], color: "#a855f7" },
 ];
 
 export function ToolsLandscape() {
@@ -13,19 +12,19 @@ export function ToolsLandscape() {
     <div className="slide module-3 bg-[#0a0a0b] px-20">
       <AnimatedText delay={200}>
         <h2 className="text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
-          全景总览：从创意到上线
+          全景总览：从想法到成果
         </h2>
         <p className="text-xl text-[#a1a1aa] mb-16 self-start">
-          每个阶段都有 AI 工具覆盖
+          每个阶段都有 AI 工具覆盖 —— 不会编程的人也能走完全流程
         </p>
       </AnimatedText>
 
-      <div className="flex items-start w-full gap-2">
+      <div className="flex items-start w-full gap-3">
         {workflow.map((stage, i) => (
           <AnimatedText key={i} delay={500 + i * 300} className="flex-1">
             <div className="flex flex-col items-center">
               <div
-                className="w-full py-4 rounded-t-xl text-center font-bold text-xl text-[#0a0a0b]"
+                className="w-full py-5 rounded-t-xl text-center font-bold text-xl text-[#0a0a0b]"
                 style={{ backgroundColor: stage.color }}
               >
                 {stage.stage}
@@ -37,15 +36,12 @@ export function ToolsLandscape() {
                   </div>
                 ))}
               </div>
-              {i < workflow.length - 1 && (
-                <div className="absolute right-0 top-1/2 text-xl text-[#27272a] hidden">→</div>
-              )}
             </div>
           </AnimatedText>
         ))}
       </div>
 
-      <AnimatedText delay={2500}>
+      <AnimatedText delay={2000}>
         <div className="mt-12 text-center">
           <p className="text-xl text-accent-green font-semibold">
             🎯 关键认知：没有"一个工具解决所有问题"，而是"每个阶段换最趁手的工具"

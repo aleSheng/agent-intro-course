@@ -19,14 +19,14 @@ export const moduleColors: Record<ModuleId, string> = {
 export const moduleNames: Record<ModuleId, string> = {
   cover: "封面",
   module1: '从\u201C会聊天\u201D到\u201C会干活\u201D',
-  module2: "前沿案例拆解",
+  module2: "AI Agent 实战",
   module3: "工具全景图",
   module4: "清醒认知",
   ending: "结尾",
 };
 
 export const slides: SlideConfig[] = [
-  // Module 0: Cover
+  // Cover (2 slides)
   {
     id: "cover",
     title: "封面",
@@ -40,7 +40,7 @@ export const slides: SlideConfig[] = [
     notes: "停顿3秒，让大家读完。然后说：这不是一堂教你写代码的课。",
   },
 
-  // Module 1: 认知升级
+  // Module 1: 从"会聊天"到"会干活" (9 slides)
   {
     id: "chatbot-vs-agent",
     title: "ChatBot vs Agent",
@@ -60,10 +60,34 @@ export const slides: SlideConfig[] = [
     notes: "逐步展示Agent的6个核心能力。每个能力举一个具体例子。",
   },
   {
+    id: "background-agent",
+    title: "Background Agent",
+    module: "module1",
+    notes: "展示Agent的进化方向：从你盯着它干，到它在后台自主工作。核心概念来自 background-agents.com。强调三个阶段的区别：in the seat → in the loop → on the loop。",
+  },
+  {
+    id: "agent-skill",
+    title: "Agent Skill",
+    module: "module1",
+    notes: "Agent Skill = 给AI装技能包。一个文件夹（SKILL.md + 脚本 + 资源），Agent按需加载。重点讲清MCP vs Skill的区别：MCP给数据（送食材），Skill教方法（给菜谱）。2025.12成为开放标准，20+平台采用。",
+  },
+  {
+    id: "agent-skill-architecture",
+    title: "渐进式披露",
+    module: "module1",
+    notes: "Skill的核心架构：三层渐进式加载——元数据层（始终加载，~100 tokens）、指令层（激活时加载）、资源层（按需读取/执行）。效果：Agent知道数百技能但上下文零浪费。生态已爆发：27万+技能、20+平台互通。",
+  },
+  {
     id: "model-overview",
     title: "基座模型速览",
     module: "module1",
-    notes: "快速过完5个模型，不需要深入讲解每个。重点是让大家知道'不止一个选择'。",
+    notes: "快速过完6个模型（含 DeepSeek R1），重点是让大家知道'不止一个选择'。",
+  },
+  {
+    id: "model-multimodal",
+    title: "多模态模型",
+    module: "module1",
+    notes: "语言模型之外，还有语音、生图、生视频、多模态理解等模型。AI不只会写字，还会说话、画画、拍视频。",
   },
   {
     id: "model-philosophy",
@@ -72,105 +96,93 @@ export const slides: SlideConfig[] = [
     notes: "选员工而非选天才。不同任务用不同模型，就像公司不同岗位招不同的人。",
   },
 
-  // Module 2: 案例拆解
+  // Module 2: AI Agent 实战 (13 slides)
+
+  // Section A: 终端智能体 (4 slides)
   {
-    id: "case1-cover",
-    title: "案例1：OpenClaw",
+    id: "agent-intro",
+    title: "终端智能体：OpenClaw",
     module: "module2",
-    notes: "介绍OpenClaw背景：一个非程序员做的开发者工具。",
+    notes: "介绍终端智能体概念，以OpenClaw为代表。技术原理是 LLM + 截图 + 鼠标脚本的循环。很火但争议也大，而且配置复杂。",
   },
   {
-    id: "case1-workflow",
-    title: "创作流程",
+    id: "agent-ecosystem",
+    title: "更多选择",
     module: "module2",
-    notes: "强调4步流程中没有'写代码'这一步。人负责的是设计和决策。",
+    notes: "OpenClaw复杂度高，但有很多更好的替代品。nanoClaw极简入门、zeroclaw零配置、Kimi Claw超长上下文、MaxClaw极致自动化、Manus全能助手。",
   },
   {
-    id: "case1-loop",
+    id: "agentic-loop",
     title: "Agentic Loop",
     module: "module2",
     notes: "这是Agent最核心的能力模式：写-测-错-改循环。Agent不怕出错，它会自己修。",
   },
   {
-    id: "case1-insight",
-    title: "案例1启发",
+    id: "agent-insight",
+    title: "冷静看 OpenClaw",
     module: "module2",
-    notes: "停顿让大家思考：如果编程不再是门槛，什么才是门槛？",
+    notes: "左右分栏：争议 vs 价值。技术门槛低、效率差、但降低了门槛和推动了开源。真正突破方向是更好的视觉编码器和 Accessibility Tree 理解。教大家用批判性思维看待技术热点。",
+  },
+
+  // Section B: Vibe Coding (4 slides)
+  {
+    id: "vibe-coding",
+    title: "Vibe Coding",
+    module: "module2",
+    notes: "Vibe Coding = 跟着感觉写代码。不需要学编程，只需要会描述需求。现场演示前的预告。",
   },
   {
-    id: "case2-cover",
-    title: "案例2：Vibe Coding",
-    module: "module2",
-    notes: "Vibe Coding = 跟着感觉写代码。现场演示前的预告。",
-  },
-  {
-    id: "case2-tools",
-    title: "Vibe Coding 工具",
-    module: "module2",
-    notes: "介绍将要使用的4个工具，各自特色。",
-  },
-  {
-    id: "case2-demo",
+    id: "vibe-coding-demo",
     title: "Demo 流程",
     module: "module2",
     notes: "这里开始现场演示。如果时间紧张可以用录屏代替。",
   },
   {
-    id: "case2-insight",
-    title: "案例2启发",
+    id: "vibe-coding-anyone",
+    title: "人人都能 Vibe Coding",
     module: "module2",
-    notes: "未来的编程更像当产品经理。引导大家思考自己的专业如何结合。",
+    notes: "三步走：自然语言描述需求→Agent自动生成→预览调整。全程只需要说人话。示例：用Cursor做个人简历网站。",
   },
   {
-    id: "case3-cover",
-    title: "案例3：Vibe Research",
+    id: "vibe-coding-insight",
+    title: "Vibe Coding 启发",
     module: "module2",
-    notes: "从写代码转向研究学习场景。这对在座学生更直接相关。",
+    notes: "未来的编程更像当产品经理。一个人+一个下午+这些工具=一个真实可用的产品。引导大家思考自己的专业如何结合。",
+  },
+
+  // Section C: Vibe Research (5 slides)
+  {
+    id: "vibe-research",
+    title: "Vibe Research",
+    module: "module2",
+    notes: "从写代码转向研究学习场景。涵盖学习、研究、论文复现。这对在座学生更直接相关。",
   },
   {
-    id: "case3-notebook",
+    id: "vibe-research-notebook",
     title: "NotebookLM 演示",
     module: "module2",
     notes: "这里播放30秒音频片段。观察大家的反应。",
   },
   {
-    id: "case3-kimi",
+    id: "vibe-research-kimi",
     title: "Kimi 超长上下文",
     module: "module2",
     notes: "整本教材变成你的私人顾问。现场可以演示把一本书扔进去提问。",
   },
   {
-    id: "case3-insight",
-    title: "案例3启发",
+    id: "vibe-research-paper",
+    title: "复现论文四步法",
     module: "module2",
-    notes: "信息获取方式的根本转变。这不是未来，这是现在。",
+    notes: "四步：喂论文给AI提炼核心算法→生成实现计划→Agent逐步编码（Agentic Loop）→对比验证结果。每一步都有对应工具。",
   },
   {
-    id: "case4-cover",
-    title: "案例4：无代码平台",
+    id: "vibe-research-insight",
+    title: "Vibe Research 启发",
     module: "module2",
-    notes: "最后一个案例：没有任何技术背景也能搭建AI产品。",
-  },
-  {
-    id: "case4-flow",
-    title: "搭建流程",
-    module: "module2",
-    notes: "四步走：人设→知识库→插件→上线。强调每一步都是拖拽完成的。",
-  },
-  {
-    id: "case4-qrcode",
-    title: "现场体验",
-    module: "module2",
-    notes: "请大家扫码体验。给1-2分钟时间让大家玩一下。",
-  },
-  {
-    id: "case4-insight",
-    title: "案例4启发",
-    module: "module2",
-    notes: "一个人+一个下午=一个产品。这在以前需要一个团队几周的时间。",
+    notes: "信息获取方式的根本转变。加上论文复现的突破：以前读懂每行代码，现在只需读懂论文本身。核心能力回到理解问题本身。",
   },
 
-  // Module 3: 工具全景
+  // Module 3: 工具全景图 (5 slides)
   {
     id: "tools-cover",
     title: "工具全景图",
@@ -187,13 +199,13 @@ export const slides: SlideConfig[] = [
     id: "tools-ide",
     title: "AI 开发环境",
     module: "module3",
-    notes: "IDE类工具更适合有一定开发基础的人。Cursor和Windsurf是目前最热门的。",
+    notes: "AI IDE不只是程序员的工具。Trae免费上手、Cursor是Vibe Coding标杆。不会编程的人也能通过自然语言驱动。",
   },
   {
     id: "tools-nocode",
-    title: "无代码 & 知识平台",
+    title: "知识 & 研究平台",
     module: "module3",
-    notes: "这两类工具门槛最低，适合所有人。",
+    notes: "NotebookLM、Kimi、Perplexity、ChatGPT/Claude——把信息变成知识，把知识变成行动。",
   },
   {
     id: "tools-landscape",
@@ -202,7 +214,7 @@ export const slides: SlideConfig[] = [
     notes: "把所有工具串起来看：从想法到产品的完整工作流。",
   },
 
-  // Module 4: 清醒认知
+  // Module 4: 清醒认知 (8 slides)
   {
     id: "risks-cover",
     title: "不灌鸡汤",
@@ -234,6 +246,12 @@ export const slides: SlideConfig[] = [
     notes: "三条安全原则必须记住：沙盒、人确认、不给密钥。",
   },
   {
+    id: "agent-beyond-code",
+    title: "Agent 不只写代码",
+    module: "module4",
+    notes: "2026年2月，Claude+Palantir在军事行动中完成了完整Agent Loop，11分23秒。与Agentic Loop完全相同的模式，但作用域从代码变成了现实世界。引导学生思考：技术无善恶，使用者的判断力决定它是工具还是武器。",
+  },
+  {
     id: "real-value",
     title: "真正值钱的能力",
     module: "module4",
@@ -246,7 +264,7 @@ export const slides: SlideConfig[] = [
     notes: "用精准自然语言描述需求——这才是AI时代的核心技能。展示模糊vs精准prompt对比。",
   },
 
-  // Ending
+  // Ending (4 slides)
   {
     id: "ending-judgment",
     title: "一个判断",
@@ -263,6 +281,12 @@ export const slides: SlideConfig[] = [
     id: "ending-quote",
     title: "结尾金句",
     module: "ending",
-    notes: "全场最后一句话。停顿。然后感谢大家。",
+    notes: "全场的压轴金句。停顿5秒，让大家消化。然后说'感谢大家'，进入最后一页联系方式。",
+  },
+  {
+    id: "ending-contact",
+    title: "联系方式",
+    module: "ending",
+    notes: "展示微信公众号二维码，引导大家关注。可以留30秒让大家扫码。",
   },
 ];

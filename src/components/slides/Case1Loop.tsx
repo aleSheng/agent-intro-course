@@ -52,7 +52,7 @@ export function Case1Loop() {
                 fill="#a855f7"
                 className="origin-center"
                 style={{
-                  animation: "spin 4s linear infinite",
+                  animation: "orbit 4s linear infinite",
                   transformOrigin: "300px 300px",
                 }}
               />
@@ -102,12 +102,6 @@ export function Case1Loop() {
         </AnimatedText>
       </div>
 
-      <style>{`
-        @keyframes spin {
-          from { transform: rotate(0deg); }
-          to { transform: rotate(360deg); }
-        }
-      `}</style>
     </div>
   );
 }

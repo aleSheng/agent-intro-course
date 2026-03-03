@@ -2,10 +2,10 @@ import { AnimatedText } from "@/components/shared/AnimatedText";
 import { IconCard } from "@/components/shared/IconCard";
 
 const platforms = [
-  { icon: "🧩", title: "扣子(Coze)", desc: "字节系，拖拽式搭建，发布即上线", color: "#a855f7" },
-  { icon: "🔧", title: "Dify", desc: "开源，适合私有化部署，企业级Agent搭建", color: "#3b82f6" },
-  { icon: "📓", title: "NotebookLM", desc: "Google出品，论文/书籍秒变播客", color: "#22c55e" },
+  { icon: "📓", title: "NotebookLM", desc: "Google 出品，论文/书籍秒变播客对话", color: "#22c55e" },
   { icon: "🌙", title: "Kimi", desc: "超长上下文，整本书变私人顾问", color: "#6366f1" },
+  { icon: "🔍", title: "Perplexity", desc: "AI 原生搜索引擎，深度研究自动出报告", color: "#3b82f6" },
+  { icon: "🧠", title: "ChatGPT / Claude", desc: "通用对话，深度推理与写作最强底座", color: "#a855f7" },
 ];
 
 export function ToolsNocodeKnowledge() {
@@ -13,10 +13,10 @@ export function ToolsNocodeKnowledge() {
     <div className="slide module-3 bg-[#0a0a0b] px-20">
       <AnimatedText delay={200}>
         <h2 className="text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
-          无代码平台 & 知识平台
+          知识 & 研究平台
         </h2>
         <p className="text-xl text-[#a1a1aa] mb-12 self-start">
-          零技术门槛，人人可用
+          把信息变成知识，把知识变成行动
         </p>
       </AnimatedText>
 

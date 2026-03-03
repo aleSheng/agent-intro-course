@@ -1,10 +1,36 @@
 import { AnimatedText } from "@/components/shared/AnimatedText";
 
-const steps = [
-  { icon: "📝", title: "写设计文档", desc: "用自然语言描述系统架构" },
-  { icon: "📋", title: "定义需求", desc: "清晰地告诉 Agent 要什么" },
-  { icon: "👀", title: "Review AI 输出", desc: "审查代码质量与逻辑" },
-  { icon: "⚖️", title: "做取舍决策", desc: "在多个方案中选最优解" },
+const alternatives = [
+  {
+    name: "nanoClaw",
+    desc: "极简入门，几行配置就能跑",
+    color: "#22c55e",
+    tag: "入门首选",
+  },
+  {
+    name: "zeroclaw",
+    desc: "零配置，开箱即用",
+    color: "#3b82f6",
+    tag: "零门槛",
+  },
+  {
+    name: "Kimi Claw",
+    desc: "月之暗面出品，超长上下文",
+    color: "#6366f1",
+    tag: "长文档",
+  },
+  {
+    name: "MaxClaw",
+    desc: "极致自动化，端到端完成任务",
+    color: "#ef4444",
+    tag: "重度使用",
+  },
+  {
+    name: "Manus",
+    desc: "云端全能助手，无需本地环境",
+    color: "#f59e0b",
+    tag: "云端方案",
+  },
 ];
 
 export function Case1Workflow() {
@@ -12,35 +38,38 @@ export function Case1Workflow() {
     <div className="slide module-2 bg-[#0a0a0b] px-20">
       <AnimatedText delay={200}>
         <h2 className="text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
-          人在这个过程中做了什么？
+          OpenClaw 太复杂？你还有更多选择
         </h2>
-        <p className="text-xl text-[#a1a1aa] mb-16 self-start">
-          注意：以下没有一步是"写代码"
+        <p className="text-xl text-[#a1a1aa] mb-14 self-start">
+          终端智能体生态正在快速扩展——找到适合你的那个
         </p>
       </AnimatedText>
 
-      <div className="flex gap-6 w-full items-start">
-        {steps.map((step, i) => (
-          <AnimatedText key={i} delay={500 + i * 300} className="flex-1">
-            <div className="flex flex-col items-center text-center">
-              <div className="w-24 h-24 rounded-2xl bg-accent-purple/10 border-2 border-accent-purple/30 flex items-center justify-center text-5xl mb-6">
-                {step.icon}
+      <div className="grid grid-cols-5 gap-5 w-full">
+        {alternatives.map((alt, i) => (
+          <AnimatedText key={alt.name} delay={500 + i * 200}>
+            <div
+              className="bg-[#141416] rounded-2xl p-6 h-full border"
+              style={{ borderColor: `${alt.color}33` }}
+            >
+              <div
+                className="inline-block px-3 py-1 rounded-full text-sm font-mono mb-4"
+                style={{ backgroundColor: `${alt.color}1a`, color: alt.color }}
+              >
+                {alt.tag}
               </div>
-              <h3 className="text-2xl font-bold text-[#f5f5f5] mb-3">{step.title}</h3>
-              <p className="text-lg text-[#a1a1aa]">{step.desc}</p>
-              {i < steps.length - 1 && (
-                <div className="hidden lg:block absolute right-0 top-1/2 text-3xl text-[#27272a]">→</div>
-              )}
+              <h3 className="text-2xl font-bold text-[#f5f5f5] mb-3">{alt.name}</h3>
+              <p className="text-base text-[#a1a1aa]">{alt.desc}</p>
             </div>
           </AnimatedText>
         ))}
       </div>
 
-      <AnimatedText delay={2000}>
-        <div className="mt-16 flex items-center gap-4">
+      <AnimatedText delay={1800}>
+        <div className="mt-12 flex items-center gap-4">
           <div className="flex-1 h-px bg-gradient-to-r from-transparent via-accent-purple/30 to-transparent" />
           <p className="text-xl text-accent-purple font-semibold px-6">
-            人 = 设计者 + 决策者 + 质检员
+            关键不是用哪个工具，而是理解"人 + Agent"的协作模式
           </p>
           <div className="flex-1 h-px bg-gradient-to-r from-transparent via-accent-purple/30 to-transparent" />
         </div>

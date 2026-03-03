@@ -11,7 +11,7 @@ export function Case2Insight() {
           </p>
         </AnimatedText>
         <AnimatedText delay={1200}>
-          <div className="mt-12 grid grid-cols-2 gap-8 max-w-[1000px] mx-auto text-left">
+          <div className="mt-10 grid grid-cols-2 gap-8 max-w-[1000px] mx-auto text-left">
             <div className="bg-accent-green/5 border border-accent-green/20 rounded-2xl p-8">
               <p className="text-2xl font-bold text-accent-green mb-4">你负责</p>
               <ul className="space-y-3 text-xl text-[#a1a1aa]">
@@ -28,6 +28,26 @@ export function Case2Insight() {
                 <li>⚡ 修 Bug</li>
               </ul>
             </div>
+          </div>
+        </AnimatedText>
+
+        <AnimatedText delay={2200}>
+          <div className="mt-10 flex items-center justify-center gap-6 text-3xl">
+            <span className="bg-[#141416] border border-accent-purple/30 rounded-2xl px-6 py-4 text-accent-purple font-bold">
+              一个人
+            </span>
+            <span className="text-[#71717a]">+</span>
+            <span className="bg-[#141416] border border-accent-amber/30 rounded-2xl px-6 py-4 text-accent-amber font-bold">
+              一个下午
+            </span>
+            <span className="text-[#71717a]">+</span>
+            <span className="bg-[#141416] border border-accent-green/30 rounded-2xl px-6 py-4 text-accent-green font-bold">
+              这些工具
+            </span>
+            <span className="text-[#71717a]">=</span>
+            <span className="text-3xl font-bold bg-gradient-to-r from-accent-purple via-accent-blue to-accent-green bg-clip-text text-transparent">
+              一个真实可用的产品
+            </span>
           </div>
         </AnimatedText>
       </div>
