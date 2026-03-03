@@ -52,7 +52,7 @@ export function Cover() {
 
         <AnimatedText delay={1000}>
           <p className="text-2xl text-[#a1a1aa] max-w-[900px] leading-relaxed">
-            AI 智能体前沿实录
+            AI 智能体的寒武纪
           </p>
         </AnimatedText>
 
