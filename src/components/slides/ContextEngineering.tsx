@@ -14,7 +14,7 @@ export function ContextEngineering() {
 
       <div className="flex flex-col lg:flex-row gap-4 lg:gap-12 w-full">
         <AnimatedText delay={500} className="flex-1">
-          <div className="bg-accent-red/5 border border-accent-red/20 rounded-2xl p-8 h-full">
+          <div className="bg-accent-red/5 border border-accent-red/20 rounded-2xl p-4 md:p-6 lg:p-8 h-full">
             <div className="flex items-center gap-3 mb-6">
               <span className="text-2xl">❌</span>
               <span className="text-xl font-bold text-accent-red">模糊的 Prompt</span>
@@ -27,7 +27,7 @@ export function ContextEngineering() {
         </AnimatedText>
 
         <AnimatedText delay={1000} className="flex-1">
-          <div className="bg-accent-green/5 border-2 border-accent-green/20 rounded-2xl p-8 h-full">
+          <div className="bg-accent-green/5 border-2 border-accent-green/20 rounded-2xl p-4 md:p-6 lg:p-8 h-full">
             <div className="flex items-center gap-3 mb-6">
               <span className="text-2xl">✅</span>
               <span className="text-xl font-bold text-accent-green">精准的 Prompt</span>

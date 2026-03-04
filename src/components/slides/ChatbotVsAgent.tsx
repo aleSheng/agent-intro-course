@@ -14,7 +14,7 @@ export function ChatbotVsAgent() {
       <div className="flex flex-col lg:flex-row gap-4 lg:gap-12 w-full">
         {/* ChatBot side */}
         <AnimatedText delay={400} className="flex-1">
-          <div className="bg-[#141416] border border-[#27272a] rounded-2xl p-10 h-full">
+          <div className="bg-[#141416] border border-[#27272a] rounded-2xl p-4 md:p-6 lg:p-10 h-full">
             <div className="flex items-center gap-3 mb-6">
               <span className="text-3xl">💬</span>
               <h3 className="text-3xl font-bold text-[#a1a1aa]">ChatBot</h3>
@@ -42,7 +42,7 @@ export function ChatbotVsAgent() {
 
         {/* Agent side */}
         <AnimatedText delay={800} className="flex-1">
-          <div className="bg-[#141416] border-2 border-accent-purple/30 rounded-2xl p-10 h-full glow" style={{ boxShadow: "0 0 30px rgba(168, 85, 247, 0.15)" }}>
+          <div className="bg-[#141416] border-2 border-accent-purple/30 rounded-2xl p-4 md:p-6 lg:p-10 h-full glow" style={{ boxShadow: "0 0 30px rgba(168, 85, 247, 0.15)" }}>
             <div className="flex items-center gap-3 mb-6">
               <span className="text-3xl">🤖</span>
               <h3 className="text-3xl font-bold text-accent-purple">Agent</h3>

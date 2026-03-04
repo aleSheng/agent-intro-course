@@ -12,7 +12,7 @@ export function Case2Insight() {
         </AnimatedText>
         <AnimatedText delay={1200}>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 max-w-[1000px] mx-auto text-left">
-            <div className="bg-accent-green/5 border border-accent-green/20 rounded-2xl p-8">
+            <div className="bg-accent-green/5 border border-accent-green/20 rounded-2xl p-4 md:p-6 lg:p-8">
               <p className="text-2xl font-bold text-accent-green mb-4">你负责</p>
               <ul className="space-y-3 text-xl text-[#a1a1aa]">
                 <li>✦ 提需求</li>
@@ -20,7 +20,7 @@ export function Case2Insight() {
                 <li>✦ 决定方向</li>
               </ul>
             </div>
-            <div className="bg-accent-purple/5 border border-accent-purple/20 rounded-2xl p-8">
+            <div className="bg-accent-purple/5 border border-accent-purple/20 rounded-2xl p-4 md:p-6 lg:p-8">
               <p className="text-2xl font-bold text-accent-purple mb-4">Agent 负责</p>
               <ul className="space-y-3 text-xl text-[#a1a1aa]">
                 <li>⚡ 写代码</li>

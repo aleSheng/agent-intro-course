@@ -23,7 +23,7 @@ export function ModelPhilosophy() {
                 style={{ animationDelay: `${1400 + i * 200}ms` }}
               >
                 <div
-                  className="w-20 h-20 rounded-2xl flex items-center justify-center text-3xl font-bold text-white"
+                  className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-2xl flex items-center justify-center text-3xl font-bold text-white"
                   style={{ backgroundColor: m.color }}
                 >
                   {m.name.charAt(0)}

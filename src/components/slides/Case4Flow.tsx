@@ -18,26 +18,26 @@ export function Case4Flow() {
         </p>
       </AnimatedText>
 
-      <div className="flex gap-4 lg:gap-8 w-full">
+      <div className="flex flex-col md:flex-row gap-4 lg:gap-8 w-full">
         {steps.map((step, i) => (
           <AnimatedText key={i} delay={500 + i * 400} className="flex-1">
             <div className="relative">
               <div
-                className="bg-[#141416] border border-[#27272a] rounded-2xl p-10 text-center"
+                className="bg-[#141416] border border-[#27272a] rounded-2xl p-4 md:p-6 lg:p-10 text-center"
                 style={{ borderColor: `${step.color}30` }}
               >
                 <div className="text-sm font-mono text-[#71717a] mb-4">Step {i + 1}</div>
                 <div
-                  className="w-20 h-20 rounded-2xl mx-auto mb-6 flex items-center justify-center text-xl md:text-2xl lg:text-4xl"
+                  className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-2xl mx-auto mb-6 flex items-center justify-center text-xl md:text-2xl lg:text-4xl"
                   style={{ backgroundColor: `${step.color}15` }}
                 >
                   {step.icon}
                 </div>
-                <h3 className="text-2xl font-bold text-[#f5f5f5] mb-3">{step.title}</h3>
-                <p className="text-lg text-[#a1a1aa]">{step.desc}</p>
+                <h3 className="text-lg md:text-2xl font-bold text-[#f5f5f5] mb-3">{step.title}</h3>
+                <p className="text-base md:text-lg text-[#a1a1aa]">{step.desc}</p>
               </div>
               {i < steps.length - 1 && (
-                <div className="absolute top-1/2 -right-5 text-2xl text-[#27272a] z-10">→</div>
+                <div className="hidden md:block absolute top-1/2 -right-5 text-2xl text-[#27272a] z-10">→</div>
               )}
             </div>
           </AnimatedText>

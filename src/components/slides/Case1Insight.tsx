@@ -12,7 +12,7 @@ export function Case1Insight() {
       <div className="flex gap-4 lg:gap-8 w-full">
         {/* 质疑一侧 */}
         <AnimatedText delay={500} className="flex-1">
-          <div className="bg-[#141416] border border-accent-red/20 rounded-2xl p-8 h-full">
+          <div className="bg-[#141416] border border-accent-red/20 rounded-2xl p-4 md:p-6 lg:p-8 h-full">
             <h3 className="text-2xl font-bold text-accent-red mb-6">🧐 争议在哪</h3>
             <div className="space-y-5 text-lg text-[#a1a1aa]">
               <div className="flex gap-3">
@@ -33,7 +33,7 @@ export function Case1Insight() {
 
         {/* 价值一侧 */}
         <AnimatedText delay={900} className="flex-1">
-          <div className="bg-[#141416] border border-accent-green/20 rounded-2xl p-8 h-full">
+          <div className="bg-[#141416] border border-accent-green/20 rounded-2xl p-4 md:p-6 lg:p-8 h-full">
             <h3 className="text-2xl font-bold text-accent-green mb-6">💡 但它的价值是</h3>
             <div className="space-y-5 text-lg text-[#a1a1aa]">
               <div className="flex gap-3">

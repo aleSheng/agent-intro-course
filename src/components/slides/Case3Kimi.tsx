@@ -50,7 +50,7 @@ export function Case3Kimi() {
 
         {/* Output: conversation */}
         <AnimatedText delay={1500} className="flex-1">
-          <div className="bg-[#141416] border-2 border-accent-purple/30 rounded-2xl p-8"
+          <div className="bg-[#141416] border-2 border-accent-purple/30 rounded-2xl p-4 md:p-6 lg:p-8"
             style={{ boxShadow: "0 0 30px rgba(168, 85, 247, 0.1)" }}>
             <p className="text-xl font-bold text-accent-purple mb-6">💬 直接向它提问</p>
             <div className="space-y-4">

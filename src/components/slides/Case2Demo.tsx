@@ -23,30 +23,25 @@ export function Case2Demo() {
       </AnimatedText>
 
       {/* Horizontal flow */}
-      <div className="flex items-start gap-4 w-full">
+      <div className="grid grid-cols-3 md:grid-cols-5 gap-4 w-full">
         {steps.map((step, i) => (
-          <AnimatedText key={i} delay={500 + i * 300} className="flex-1">
+          <AnimatedText key={i} delay={500 + i * 300}>
             <div className="flex flex-col items-center text-center">
               <div
-                className="w-20 h-20 rounded-2xl flex items-center justify-center text-xl md:text-2xl lg:text-4xl mb-4"
+                className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-2xl flex items-center justify-center text-xl md:text-2xl lg:text-4xl mb-4"
                 style={{ backgroundColor: `${step.color}15`, border: `2px solid ${step.color}40` }}
               >
                 {step.icon}
               </div>
-              <h3 className="text-xl font-bold text-[#f5f5f5] mb-2">{step.label}</h3>
-              <p className="text-base text-[#a1a1aa]">{step.desc}</p>
+              <h3 className="text-base md:text-xl font-bold text-[#f5f5f5] mb-2">{step.label}</h3>
+              <p className="text-sm md:text-base text-[#a1a1aa]">{step.desc}</p>
             </div>
-            {i < steps.length - 1 && (
-              <div className="flex items-center justify-center mt-[-80px] ml-[100%]">
-                <span className="text-2xl text-[#27272a]">→</span>
-              </div>
-            )}
           </AnimatedText>
         ))}
       </div>
 
       <AnimatedText delay={2500}>
-        <div className="mt-16 w-full bg-[#141416] border border-[#27272a] rounded-2xl p-8">
+        <div className="mt-16 w-full bg-[#141416] border border-[#27272a] rounded-2xl p-4 md:p-6 lg:p-8">
           <p className="text-xl text-[#f5f5f5] font-semibold mb-4">💡 演示之后：对话式迭代</p>
           <div className="flex gap-4 flex-wrap">
             {['\u201C加个暗黑模式\u201D', '\u201C速度随分数递增\u201D', '\u201C加背景音乐\u201D'].map((req, i) => (

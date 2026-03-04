@@ -47,7 +47,7 @@ export function ModelMultimodal() {
         {categories.map((cat, i) => (
           <AnimatedText key={cat.title} delay={500 + i * 200}>
             <div
-              className="bg-[#141416] border rounded-2xl p-8 h-full"
+              className="bg-[#141416] border rounded-2xl p-4 md:p-6 lg:p-8 h-full"
               style={{ borderColor: `${cat.color}33` }}
             >
               <div className="flex items-center gap-4 mb-5">

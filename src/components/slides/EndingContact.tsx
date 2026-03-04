@@ -15,11 +15,11 @@ export function EndingContact() {
         </AnimatedText>
 
         <AnimatedText delay={900}>
-          <div className="bg-white rounded-3xl p-6 shadow-lg shadow-accent-cyan/10">
+          <div className="bg-white rounded-3xl p-4 md:p-6 shadow-lg shadow-accent-cyan/10">
             <img
-              src="/pics/mpwechatqrcode.jpg"
+              src={`${import.meta.env.BASE_URL}pics/mpwechatqrcode.jpg`}
               alt="微信公众号二维码"
-              className="w-[320px] h-[320px] object-contain"
+              className="w-[200px] h-[200px] md:w-[280px] md:h-[280px] lg:w-[320px] lg:h-[320px] object-contain"
             />
           </div>
         </AnimatedText>

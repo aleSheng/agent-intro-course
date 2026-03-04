@@ -37,7 +37,7 @@ export function Safety() {
         {principles.map((p, i) => (
           <AnimatedText key={i} delay={500 + i * 300}>
             <div
-              className="bg-[#141416] border rounded-2xl p-8 h-full"
+              className="bg-[#141416] border rounded-2xl p-4 md:p-6 lg:p-8 h-full"
               style={{ borderColor: `${p.color}30` }}
             >
               <div

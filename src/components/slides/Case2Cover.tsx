@@ -20,7 +20,7 @@ export function Case2Cover() {
           </p>
         </AnimatedText>
         <AnimatedText delay={1500}>
-          <div className="mt-12 bg-[#1a1a2e] rounded-2xl border border-[#2a2a3e] p-8 inline-block font-mono text-left">
+          <div className="mt-12 bg-[#1a1a2e] rounded-2xl border border-[#2a2a3e] p-4 md:p-6 lg:p-8 inline-block font-mono text-left">
             <p className="text-[#71717a] text-lg">
               <span className="text-accent-green">$</span>{" "}
               <TypewriterText text='claude "帮我做一个带计分板的网页贪吃蛇游戏"' speed={40} delay={1800} />

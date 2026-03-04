@@ -14,7 +14,7 @@ export function Case3Notebook() {
 
       <div className="flex flex-col lg:flex-row gap-4 lg:gap-12 w-full items-stretch">
         <AnimatedText delay={500} className="flex-1">
-          <div className="bg-[#141416] border border-[#27272a] rounded-2xl p-8 h-full">
+          <div className="bg-[#141416] border border-[#27272a] rounded-2xl p-4 md:p-6 lg:p-8 h-full">
             <div className="flex items-center gap-3 mb-6">
               <span className="text-3xl">📄</span>
               <h3 className="text-2xl font-bold text-[#a1a1aa]">输入</h3>
@@ -46,7 +46,7 @@ export function Case3Notebook() {
         </AnimatedText>
 
         <AnimatedText delay={1000} className="flex-1">
-          <div className="bg-[#141416] border-2 border-accent-purple/30 rounded-2xl p-8 h-full" style={{ boxShadow: "0 0 30px rgba(168, 85, 247, 0.1)" }}>
+          <div className="bg-[#141416] border-2 border-accent-purple/30 rounded-2xl p-4 md:p-6 lg:p-8 h-full" style={{ boxShadow: "0 0 30px rgba(168, 85, 247, 0.1)" }}>
             <div className="flex items-center gap-3 mb-6">
               <span className="text-3xl">🎙️</span>
               <h3 className="text-2xl font-bold text-accent-purple">输出：播客对谈</h3>

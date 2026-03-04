@@ -40,7 +40,7 @@ export function BackgroundAgent() {
         {stages.map((s, i) => (
           <AnimatedText key={i} delay={500 + i * 300} className="flex-1">
             <div
-              className="bg-[#141416] border rounded-2xl p-8 h-full flex flex-col"
+              className="bg-[#141416] border rounded-2xl p-4 md:p-6 lg:p-8 h-full flex flex-col"
               style={{
                 borderColor:
                   i === 2 ? `${s.color}50` : "#27272a",

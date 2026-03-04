@@ -14,7 +14,7 @@ export function RiskHallucination() {
 
       <div className="flex flex-col lg:flex-row gap-4 lg:gap-12 w-full">
         <AnimatedText delay={500} className="flex-1">
-          <div className="bg-[#141416] border border-[#27272a] rounded-2xl p-8">
+          <div className="bg-[#141416] border border-[#27272a] rounded-2xl p-4 md:p-6 lg:p-8">
             <div className="flex items-center gap-3 mb-6">
               <span className="text-2xl">🤖</span>
               <span className="text-xl font-semibold text-[#a1a1aa]">Agent 说：</span>
@@ -40,7 +40,7 @@ export function RiskHallucination() {
         </AnimatedText>
 
         <AnimatedText delay={1000} className="flex-1">
-          <div className="bg-accent-red/5 border-2 border-accent-red/30 rounded-2xl p-8">
+          <div className="bg-accent-red/5 border-2 border-accent-red/30 rounded-2xl p-4 md:p-6 lg:p-8">
             <div className="flex items-center gap-3 mb-6">
               <span className="text-2xl">❌</span>
               <span className="text-xl font-semibold text-accent-red">真相：</span>

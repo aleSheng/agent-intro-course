@@ -1,4 +1,4 @@
-import { useState, useCallback, type ReactNode } from "react";
+import { useState, useCallback, useRef, useEffect, type ReactNode } from "react";
 import { SlideContainer } from "@/components/layout/SlideContainer";
 import { ProgressBar } from "@/components/layout/ProgressBar";
 import { useSlideNavigation } from "@/hooks/useSlideNavigation";
@@ -178,6 +178,28 @@ function App() {
     },
   });
 
+  // Touch swipe support
+  const touchStartX = useRef<number | null>(null);
+  useEffect(() => {
+    const handleTouchStart = (e: TouchEvent) => {
+      touchStartX.current = e.touches[0].clientX;
+    };
+    const handleTouchEnd = (e: TouchEvent) => {
+      if (touchStartX.current === null) return;
+      const dx = e.changedTouches[0].clientX - touchStartX.current;
+      touchStartX.current = null;
+      if (Math.abs(dx) < 50) return;
+      if (dx < 0) next();
+      else prev();
+    };
+    window.addEventListener("touchstart", handleTouchStart);
+    window.addEventListener("touchend", handleTouchEnd);
+    return () => {
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchend", handleTouchEnd);
+    };
+  }, [next, prev]);
+
   const current = slides[currentSlide];
   const renderSlide = slideComponents[current.id];
 
@@ -222,10 +244,29 @@ function App() {
         onClick={next}
       />
 
+      {/* Mobile navigation buttons */}
+      <div className="fixed bottom-10 left-1/2 -translate-x-1/2 z-40 flex items-center gap-6 md:hidden">
+        <button
+          onClick={prev}
+          className="w-11 h-11 rounded-full bg-white/10 backdrop-blur text-white/70 text-xl flex items-center justify-center active:scale-95 transition-transform"
+        >
+          ←
+        </button>
+        <span className="text-xs text-white/40 font-mono tabular-nums">
+          {currentSlide + 1}/{slides.length}
+        </span>
+        <button
+          onClick={next}
+          className="w-11 h-11 rounded-full bg-white/10 backdrop-blur text-white/70 text-xl flex items-center justify-center active:scale-95 transition-transform"
+        >
+          →
+        </button>
+      </div>
+
       {/* Toggle notes button */}
       <button
         onClick={() => setShowNotes((v) => !v)}
-        className="fixed bottom-4 right-4 z-40 w-8 h-8 rounded-full bg-[#27272a] text-[#71717a] text-xs hover:bg-[#3f3f46] transition-colors flex items-center justify-center"
+        className="fixed bottom-4 right-4 z-40 w-8 h-8 rounded-full bg-[#27272a] text-[#71717a] text-xs hover:bg-[#3f3f46] transition-colors items-center justify-center hidden md:flex"
         title="Toggle speaker notes (N)"
       >
         N

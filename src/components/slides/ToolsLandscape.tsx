@@ -34,12 +34,12 @@ export function ToolsLandscape() {
           <AnimatedText key={i} delay={500 + i * 300}>
             <div className="flex flex-col items-center">
               <div
-                className="w-full py-5 rounded-t-xl text-center font-bold text-xl text-[#0a0a0b]"
+                className="w-full py-3 md:py-5 rounded-t-xl text-center font-bold text-sm md:text-base lg:text-xl text-[#0a0a0b]"
                 style={{ backgroundColor: stage.color }}
               >
                 {stage.stage}
               </div>
-              <div className="w-full bg-[#141416] border border-[#27272a] border-t-0 rounded-b-xl p-6">
+              <div className="w-full bg-[#141416] border border-[#27272a] border-t-0 rounded-b-xl p-3 md:p-4 lg:p-6">
                 {stage.tools.map((tool, j) => {
                   const href = toolUrls[tool];
                   return href ? (
