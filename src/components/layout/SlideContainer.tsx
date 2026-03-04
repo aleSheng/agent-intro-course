@@ -7,14 +7,21 @@ interface SlideContainerProps {
 
 export function SlideContainer({ children, className = "" }: SlideContainerProps) {
   const [scale, setScale] = useState(1);
+  const [isPortrait, setIsPortrait] = useState(false);
 
   useEffect(() => {
     const updateScale = () => {
-      const s = Math.min(
-        window.innerWidth / 1920,
-        window.innerHeight / 1080
-      );
-      setScale(s);
+      const w = window.innerWidth;
+      const h = window.innerHeight;
+      const portrait = w < h;
+      setIsPortrait(portrait);
+
+      if (portrait) {
+        // Portrait: scale by width only, allow vertical scroll
+        setScale(w / 1920);
+      } else {
+        setScale(Math.min(w / 1920, h / 1080));
+      }
     };
     updateScale();
     window.addEventListener("resize", updateScale);
@@ -22,9 +29,9 @@ export function SlideContainer({ children, className = "" }: SlideContainerProps
   }, []);
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-[#0a0a0b] overflow-hidden">
+    <div className={`fixed inset-0 flex ${isPortrait ? 'items-start overflow-y-auto' : 'items-center overflow-hidden'} justify-center bg-[#0a0a0b]`}>
       <div
-        className={`w-[1920px] h-[1080px] origin-center overflow-hidden ${className}`}
+        className={`w-[1920px] h-[1080px] ${isPortrait ? 'origin-top' : 'origin-center'} overflow-hidden ${className}`}
         style={{ transform: `scale(${scale})` }}
       >
         {children}

@@ -1,5 +1,15 @@
 import { AnimatedText } from "@/components/shared/AnimatedText";
 
+const toolUrls: Record<string, string> = {
+  "ChatGPT / Claude": "https://chatgpt.com",
+  "Perplexity": "https://perplexity.ai",
+  "NotebookLM": "https://notebooklm.google.com",
+  "Cursor": "https://cursor.com",
+  "Trae": "https://trae.ai",
+  "Claude Code": "https://docs.anthropic.com/en/docs/claude-code",
+  "Cursor Agent": "https://cursor.com",
+};
+
 const workflow = [
   { stage: "创意", tools: ["你的大脑", "ChatGPT / Claude"], color: "#f5f5f5" },
   { stage: "研究", tools: ["Perplexity", "NotebookLM"], color: "#06b6d4" },
@@ -30,11 +40,24 @@ export function ToolsLandscape() {
                 {stage.stage}
               </div>
               <div className="w-full bg-[#141416] border border-[#27272a] border-t-0 rounded-b-xl p-6">
-                {stage.tools.map((tool, j) => (
-                  <div key={j} className="py-2 text-lg text-[#a1a1aa] text-center">
-                    {tool}
-                  </div>
-                ))}
+                {stage.tools.map((tool, j) => {
+                  const href = toolUrls[tool];
+                  return href ? (
+                    <a
+                      key={j}
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block py-2 text-lg text-[#a1a1aa] text-center hover:text-[#f5f5f5] hover:underline transition-colors"
+                    >
+                      {tool}
+                    </a>
+                  ) : (
+                    <div key={j} className="py-2 text-lg text-[#a1a1aa] text-center">
+                      {tool}
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </AnimatedText>
