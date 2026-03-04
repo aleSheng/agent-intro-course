@@ -25,7 +25,7 @@ export function AgentCapabilities() {
         {capabilities.map((cap, i) => (
           <AnimatedText key={i} delay={400 + i * 200}>
             <div className="bg-[#141416] border border-[#27272a] rounded-2xl p-4 md:p-6 lg:p-8 flex items-start gap-3 lg:gap-5 hover:border-accent-blue/30 transition-colors">
-              <div className="text-xl md:text-2xl lg:text-4xl w-16 h-16 rounded-xl bg-accent-blue/10 flex items-center justify-center shrink-0">
+              <div className="text-xl md:text-2xl lg:text-4xl w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 rounded-xl bg-accent-blue/10 flex items-center justify-center shrink-0">
                 {cap.icon}
               </div>
               <div>

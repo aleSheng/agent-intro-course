@@ -45,11 +45,11 @@ export function Case1Workflow() {
         </p>
       </AnimatedText>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 lg:gap-5 w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 lg:gap-5 w-full">
         {alternatives.map((alt, i) => (
           <AnimatedText key={alt.name} delay={500 + i * 200}>
             <div
-              className="bg-[#141416] rounded-2xl p-6 h-full border"
+              className="bg-[#141416] rounded-2xl p-4 md:p-6 h-full border"
               style={{ borderColor: `${alt.color}33` }}
             >
               <div

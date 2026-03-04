@@ -1,6 +1,12 @@
+import { useMemo } from "react";
 import { AnimatedText } from "@/components/shared/AnimatedText";
 
 export function Case3Notebook() {
+  const barHeights = useMemo(
+    () => Array.from({ length: 30 }, (_, i) => 20 + Math.sin(i * 0.5) * 30 + Math.random() * 20),
+    []
+  );
+
   return (
     <div className="slide module-2 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
       <AnimatedText delay={200}>
@@ -53,13 +59,13 @@ export function Case3Notebook() {
             </div>
             {/* Waveform visualization */}
             <div className="bg-[#0a0a0b] rounded-xl p-6 border border-accent-purple/20 mb-6">
-              <div className="flex items-end gap-1 h-20 justify-center">
-                {Array.from({ length: 40 }, (_, i) => (
+              <div className="flex items-end gap-1 h-20 justify-center overflow-hidden">
+                {barHeights.map((h, i) => (
                   <div
                     key={i}
-                    className="w-2 bg-accent-purple/60 rounded-full"
+                    className="w-2 shrink-0 bg-accent-purple/60 rounded-full"
                     style={{
-                      height: `${20 + Math.sin(i * 0.5) * 30 + Math.random() * 20}%`,
+                      height: `${h}%`,
                       animationDelay: `${i * 50}ms`,
                     }}
                   />

@@ -15,11 +15,11 @@ export function ModelPhilosophy() {
         </AnimatedText>
 
         <AnimatedText delay={1200}>
-          <div className="flex justify-center gap-4 lg:gap-8 mt-4">
+          <div className="flex flex-wrap justify-center gap-4 lg:gap-8 mt-4">
             {models.map((m, i) => (
               <div
                 key={m.name}
-                className="animate-fade-in-up flex flex-col items-center gap-4 w-48"
+                className="animate-fade-in-up flex flex-col items-center gap-4 w-28 md:w-36 lg:w-48"
                 style={{ animationDelay: `${1400 + i * 200}ms` }}
               >
                 <div

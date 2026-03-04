@@ -23,17 +23,17 @@ export function RealValue() {
         <div className="w-full rounded-2xl overflow-hidden border border-[#27272a]">
           {/* Header */}
           <div className="grid grid-cols-1 md:grid-cols-2 bg-[#141416] border-b border-[#27272a]">
-            <div className="px-10 py-5 text-xl font-semibold text-[#71717a]">你以为值钱的 ❌</div>
-            <div className="px-10 py-5 text-xl font-semibold text-accent-green">真正值钱的 ✅</div>
+            <div className="px-4 md:px-6 lg:px-10 py-3 md:py-5 text-xl font-semibold text-[#71717a]">你以为值钱的 ❌</div>
+            <div className="px-4 md:px-6 lg:px-10 py-3 md:py-5 text-xl font-semibold text-accent-green">真正值钱的 ✅</div>
           </div>
           {/* Rows */}
           {rows.map((row, i) => (
             <AnimatedText key={i} delay={600 + i * 300}>
               <div className="grid grid-cols-1 md:grid-cols-2 border-b border-[#27272a] last:border-b-0">
-                <div className="px-10 py-6 text-xl text-[#71717a] line-through decoration-accent-red/50">
+                <div className="px-4 md:px-6 lg:px-10 py-4 md:py-6 text-xl text-[#71717a] line-through decoration-accent-red/50">
                   {row.think}
                 </div>
-                <div className="px-10 py-6 text-xl text-accent-green font-medium">
+                <div className="px-4 md:px-6 lg:px-10 py-4 md:py-6 text-xl text-accent-green font-medium">
                   {row.real}
                 </div>
               </div>

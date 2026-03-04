@@ -41,7 +41,7 @@ export function Safety() {
               style={{ borderColor: `${p.color}30` }}
             >
               <div
-                className="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mb-6"
+                className="w-12 h-12 md:w-16 md:h-16 rounded-2xl flex items-center justify-center text-2xl md:text-3xl mb-4 md:mb-6"
                 style={{ backgroundColor: `${p.color}15` }}
               >
                 {p.icon}

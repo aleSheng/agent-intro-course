@@ -20,7 +20,7 @@ export function RisksCover() {
           </p>
         </AnimatedText>
         <AnimatedText delay={1400}>
-          <div className="mt-12 flex justify-center gap-4 lg:gap-8">
+          <div className="mt-12 flex flex-wrap justify-center gap-4 lg:gap-8">
             <div className="px-6 py-3 bg-accent-red/10 border border-accent-red/30 rounded-xl text-xl text-accent-red">⚠️ Agent 会翻车</div>
             <div className="px-6 py-3 bg-accent-amber/10 border border-accent-amber/30 rounded-xl text-xl text-accent-amber">🛡️ 安全底线</div>
             <div className="px-6 py-3 bg-accent-green/10 border border-accent-green/30 rounded-xl text-xl text-accent-green">💎 真正值钱的能力</div>

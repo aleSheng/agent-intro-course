@@ -16,21 +16,21 @@ export function Case3Kimi() {
         {/* Input visualization */}
         <AnimatedText delay={500} className="flex-1">
           <div className="flex flex-col gap-4">
-            <div className="bg-[#141416] border border-[#27272a] rounded-xl p-6 flex items-center gap-4">
+            <div className="bg-[#141416] border border-[#27272a] rounded-xl p-4 md:p-6 flex items-center gap-4">
               <span className="text-3xl">📖</span>
               <div>
                 <p className="text-xl font-semibold text-[#f5f5f5]">整本教材</p>
                 <p className="text-sm text-[#71717a]">~500 页 · 20万字</p>
               </div>
             </div>
-            <div className="bg-[#141416] border border-[#27272a] rounded-xl p-6 flex items-center gap-4">
+            <div className="bg-[#141416] border border-[#27272a] rounded-xl p-4 md:p-6 flex items-center gap-4">
               <span className="text-3xl">💻</span>
               <div>
                 <p className="text-xl font-semibold text-[#f5f5f5]">完整 GitHub 仓库</p>
                 <p className="text-sm text-[#71717a]">200+ 文件 · 5万行代码</p>
               </div>
             </div>
-            <div className="bg-[#141416] border border-[#27272a] rounded-xl p-6 flex items-center gap-4">
+            <div className="bg-[#141416] border border-[#27272a] rounded-xl p-4 md:p-6 flex items-center gap-4">
               <span className="text-3xl">📋</span>
               <div>
                 <p className="text-xl font-semibold text-[#f5f5f5]">10篇学术论文</p>

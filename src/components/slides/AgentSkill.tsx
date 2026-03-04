@@ -14,7 +14,7 @@ export function AgentSkill() {
 
       {/* Skill是什么 */}
       <AnimatedText delay={500}>
-        <div className="bg-[#141416] border border-accent-blue/20 rounded-2xl p-7 mb-8 w-full">
+        <div className="bg-[#141416] border border-accent-blue/20 rounded-2xl p-4 md:p-6 lg:p-7 mb-8 w-full">
           <div className="flex items-start gap-3 lg:gap-5">
             <span className="text-xl md:text-2xl lg:text-4xl shrink-0">📦</span>
             <div>
@@ -30,8 +30,8 @@ export function AgentSkill() {
 
       {/* MCP vs Skill 对比 */}
       <AnimatedText delay={1000}>
-        <div className="flex gap-3 lg:gap-6 w-full mb-8">
-          <div className="flex-1 bg-[#141416] border border-[#27272a] rounded-2xl p-7">
+        <div className="flex flex-col md:flex-row gap-3 lg:gap-6 w-full mb-8">
+          <div className="flex-1 bg-[#141416] border border-[#27272a] rounded-2xl p-4 md:p-6 lg:p-7">
             <div className="flex items-center gap-3 mb-5">
               <div className="w-10 h-10 rounded-lg bg-[#27272a] flex items-center justify-center text-xl">⚡</div>
               <h3 className="text-2xl font-bold text-[#f5f5f5]">MCP</h3>
@@ -55,7 +55,7 @@ export function AgentSkill() {
               </div>
             </div>
           </div>
-          <div className="flex-1 bg-[#141416] border-2 border-accent-green/30 rounded-2xl p-7" style={{ boxShadow: "0 0 30px rgba(34, 197, 94, 0.08)" }}>
+          <div className="flex-1 bg-[#141416] border-2 border-accent-green/30 rounded-2xl p-4 md:p-6 lg:p-7" style={{ boxShadow: "0 0 30px rgba(34, 197, 94, 0.08)" }}>
             <div className="flex items-center gap-3 mb-5">
               <div className="w-10 h-10 rounded-lg bg-accent-green/10 flex items-center justify-center text-xl">📖</div>
               <h3 className="text-2xl font-bold text-accent-green">Agent Skill</h3>

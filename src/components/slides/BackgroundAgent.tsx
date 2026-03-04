@@ -36,7 +36,7 @@ export function BackgroundAgent() {
         </p>
       </AnimatedText>
 
-      <div className="flex gap-3 lg:gap-6 w-full items-stretch">
+      <div className="flex flex-col md:flex-row gap-3 lg:gap-6 w-full items-stretch">
         {stages.map((s, i) => (
           <AnimatedText key={i} delay={500 + i * 300} className="flex-1">
             <div

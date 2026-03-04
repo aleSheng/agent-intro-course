@@ -32,16 +32,16 @@ export function Case2Insight() {
         </AnimatedText>
 
         <AnimatedText delay={2200}>
-          <div className="mt-10 flex items-center justify-center gap-3 lg:gap-6 text-3xl">
-            <span className="bg-[#141416] border border-accent-purple/30 rounded-2xl px-6 py-4 text-accent-purple font-bold">
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-3 lg:gap-6 text-xl md:text-2xl lg:text-3xl">
+            <span className="bg-[#141416] border border-accent-purple/30 rounded-2xl px-4 md:px-6 py-3 md:py-4 text-accent-purple font-bold">
               一个人
             </span>
             <span className="text-[#71717a]">+</span>
-            <span className="bg-[#141416] border border-accent-amber/30 rounded-2xl px-6 py-4 text-accent-amber font-bold">
+            <span className="bg-[#141416] border border-accent-amber/30 rounded-2xl px-4 md:px-6 py-3 md:py-4 text-accent-amber font-bold">
               一个下午
             </span>
             <span className="text-[#71717a]">+</span>
-            <span className="bg-[#141416] border border-accent-green/30 rounded-2xl px-6 py-4 text-accent-green font-bold">
+            <span className="bg-[#141416] border border-accent-green/30 rounded-2xl px-4 md:px-6 py-3 md:py-4 text-accent-green font-bold">
               这些工具
             </span>
             <span className="text-[#71717a]">=</span>

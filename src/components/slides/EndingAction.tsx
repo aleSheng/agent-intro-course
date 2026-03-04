@@ -23,7 +23,7 @@ export function EndingAction() {
         <div className="space-y-5">
           {items.map((item, i) => (
             <AnimatedText key={i} delay={800 + i * 400}>
-              <div className="flex items-center gap-3 lg:gap-5 bg-[#141416] border border-[#27272a] rounded-xl px-8 py-5">
+              <div className="flex items-center gap-3 lg:gap-5 bg-[#141416] border border-[#27272a] rounded-xl px-4 md:px-6 lg:px-8 py-3 md:py-5">
                 <div className="w-8 h-8 rounded-lg border-2 border-accent-cyan flex items-center justify-center shrink-0">
                   <span className="text-sm font-mono text-accent-cyan">{i + 1}</span>
                 </div>

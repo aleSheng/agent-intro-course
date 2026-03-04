@@ -20,11 +20,11 @@ export function EndingJudgment() {
           </p>
         </AnimatedText>
         <AnimatedText delay={2800}>
-          <div className="mt-16 flex justify-center gap-4 lg:gap-8">
+          <div className="mt-8 lg:mt-16 flex flex-wrap justify-center gap-4 lg:gap-8">
             {["品味 (Taste)", "判断力", "问题定义能力"].map((skill, i) => (
               <div
                 key={i}
-                className="px-8 py-5 bg-accent-cyan/10 border border-accent-cyan/30 rounded-2xl animate-fade-in-up"
+                className="px-4 md:px-6 lg:px-8 py-3 md:py-5 bg-accent-cyan/10 border border-accent-cyan/30 rounded-2xl animate-fade-in-up"
                 style={{ animationDelay: `${3000 + i * 300}ms` }}
               >
                 <p className="text-2xl font-bold text-accent-cyan">{skill}</p>

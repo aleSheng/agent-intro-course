@@ -47,7 +47,7 @@ export function PaperWorkflow() {
         {steps.map((step, i) => (
           <AnimatedText key={i} delay={400 + i * 300}>
             <div
-              className="bg-[#141416] border border-[#27272a] rounded-xl px-8 py-5 flex items-center gap-4 lg:gap-8"
+              className="bg-[#141416] border border-[#27272a] rounded-xl px-4 md:px-6 lg:px-8 py-3 md:py-5 flex items-center gap-4 lg:gap-8"
               style={{ borderLeftWidth: "4px", borderLeftColor: step.color }}
             >
               <span
@@ -60,7 +60,7 @@ export function PaperWorkflow() {
                 <h3 className="text-xl font-bold text-[#f5f5f5] mb-1">{step.title}</h3>
                 <p className="text-lg text-[#a1a1aa]">{step.desc}</p>
               </div>
-              <div className="shrink-0 bg-[#0a0a0b] border border-[#27272a] rounded-lg px-4 py-2">
+              <div className="hidden md:block shrink-0 bg-[#0a0a0b] border border-[#27272a] rounded-lg px-4 py-2">
                 <p className="text-sm text-[#71717a] font-mono">{step.tool}</p>
               </div>
             </div>

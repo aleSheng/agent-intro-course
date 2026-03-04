@@ -19,7 +19,7 @@ export function ContextEngineering() {
               <span className="text-2xl">❌</span>
               <span className="text-xl font-bold text-accent-red">模糊的 Prompt</span>
             </div>
-            <div className="bg-[#0a0a0b] rounded-xl p-6 border border-[#27272a] font-mono text-lg text-[#a1a1aa] leading-relaxed">
+            <div className="bg-[#0a0a0b] rounded-xl p-4 md:p-6 border border-[#27272a] font-mono text-lg text-[#a1a1aa] leading-relaxed">
               "帮我做一个网站"
             </div>
             <p className="mt-4 text-base text-[#71717a]">→ Agent 不知道：什么类型？什么功能？什么风格？给谁用？</p>
@@ -32,7 +32,7 @@ export function ContextEngineering() {
               <span className="text-2xl">✅</span>
               <span className="text-xl font-bold text-accent-green">精准的 Prompt</span>
             </div>
-            <div className="bg-[#0a0a0b] rounded-xl p-6 border border-accent-green/20 font-mono text-base text-[#a1a1aa] leading-relaxed">
+            <div className="bg-[#0a0a0b] rounded-xl p-4 md:p-6 border border-accent-green/20 font-mono text-base text-[#a1a1aa] leading-relaxed">
               "用 React + TailwindCSS 搭建一个个人简历网站。
               <br />深色主题，单页面，包含：
               <br />- 头像和简介区域

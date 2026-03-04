@@ -55,15 +55,15 @@ export function RiskLoop() {
 
         <AnimatedText delay={1000} className="flex-1">
           <div className="space-y-6">
-            <div className="bg-[#141416] border border-[#27272a] rounded-xl p-6">
+            <div className="bg-[#141416] border border-[#27272a] rounded-xl p-4 md:p-6">
               <p className="text-xl font-semibold text-[#f5f5f5] mb-3">😵 典型场景</p>
               <p className="text-lg text-[#a1a1aa]">Agent 尝试用 方法A 修一个 bug → 失败 → 再用 方法A → 失败 → 再用 方法A...</p>
             </div>
-            <div className="bg-[#141416] border border-[#27272a] rounded-xl p-6">
+            <div className="bg-[#141416] border border-[#27272a] rounded-xl p-4 md:p-6">
               <p className="text-xl font-semibold text-[#f5f5f5] mb-3">🤔 为什么？</p>
               <p className="text-lg text-[#a1a1aa]">它没有"退一步想想"的能力。它的策略空间可能被错误的假设锁死了。</p>
             </div>
-            <div className="bg-accent-green/5 border border-accent-green/20 rounded-xl p-6">
+            <div className="bg-accent-green/5 border border-accent-green/20 rounded-xl p-4 md:p-6">
               <p className="text-xl font-semibold text-accent-green mb-3">✅ 人应该怎么做？</p>
               <p className="text-lg text-[#a1a1aa]">发现 Agent 原地打转时<strong className="text-[#f5f5f5]">果断介入</strong>：换个思路、给新提示、或干脆换个 Agent。</p>
             </div>

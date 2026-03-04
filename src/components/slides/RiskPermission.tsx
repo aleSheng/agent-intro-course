@@ -15,7 +15,7 @@ export function RiskPermission() {
 
       <div className="w-full max-w-[1200px] mx-auto">
         <AnimatedText delay={500}>
-          <div className="mb-8 bg-[#141416] border border-[#27272a] rounded-xl p-6">
+          <div className="mb-8 bg-[#141416] border border-[#27272a] rounded-xl p-4 md:p-6">
             <p className="text-xl text-[#f5f5f5]">
               <span className="text-accent-blue">你：</span> "清理一下不需要的文件"
             </p>
@@ -38,7 +38,7 @@ export function RiskPermission() {
         </AnimatedText>
 
         <AnimatedText delay={2000}>
-          <div className="mt-8 bg-accent-red/10 border border-accent-red/30 rounded-xl p-6 text-center">
+          <div className="mt-8 bg-accent-red/10 border border-accent-red/30 rounded-xl p-4 md:p-6 text-center">
             <p className="text-2xl text-accent-red font-bold">
               ⚠️ 一个模糊的指令 = 不可逆的灾难
             </p>

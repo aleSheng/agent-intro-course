@@ -9,7 +9,7 @@ export function Case1Insight() {
         </h2>
       </AnimatedText>
 
-      <div className="flex gap-4 lg:gap-8 w-full">
+      <div className="flex flex-col md:flex-row gap-4 lg:gap-8 w-full">
         {/* 质疑一侧 */}
         <AnimatedText delay={500} className="flex-1">
           <div className="bg-[#141416] border border-accent-red/20 rounded-2xl p-4 md:p-6 lg:p-8 h-full">
@@ -54,7 +54,7 @@ export function Case1Insight() {
       </div>
 
       <AnimatedText delay={1400}>
-        <div className="mt-10 bg-[#141416] border border-[#27272a] rounded-xl px-8 py-5 w-full">
+        <div className="mt-10 bg-[#141416] border border-[#27272a] rounded-xl px-4 md:px-6 lg:px-8 py-3 md:py-5 w-full">
           <p className="text-xl text-[#f5f5f5]">
             <span className="text-accent-purple font-bold">真正的突破方向：</span>
             更高效的视觉编码器、能直接理解 OS 底层 <span className="font-mono text-accent-cyan">Accessibility Tree</span> 的模型 —— 而不是反复发高清截图
