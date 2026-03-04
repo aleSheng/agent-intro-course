@@ -5,7 +5,7 @@ export function Case3Kimi() {
     <div className="slide module-2 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
       <AnimatedText delay={200}>
         <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
-          Kimi：超长上下文的力量
+          云端智能体：超长上下文的力量
         </h2>
         <p className="text-xl text-[#a1a1aa] mb-6 lg:mb-12 self-start">
           整本书 / 整个代码库 → 你的私人顾问
@@ -59,7 +59,7 @@ export function Case3Kimi() {
                 <p className="text-lg text-[#f5f5f5]">"第三章和第七章的理论有什么关联？"</p>
               </div>
               <div className="bg-accent-purple/5 rounded-xl p-4 border border-accent-purple/20">
-                <p className="text-sm text-accent-purple mb-1">Kimi：</p>
+                <p className="text-sm text-accent-purple mb-1">AI：</p>
                 <p className="text-lg text-[#a1a1aa]">"第三章提出的X框架在第七章被扩展应用于Y场景，关键区别在于..."</p>
               </div>
               <div className="bg-[#0a0a0b] rounded-xl p-4 border border-[#27272a]">

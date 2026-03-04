@@ -4,8 +4,8 @@ const steps = [
   {
     num: "01",
     title: "喂论文给 AI",
-    desc: "把 PDF 扔进 Kimi / Claude，让它帮你提炼核心算法、公式、数据流",
-    tool: "Kimi · Claude · NotebookLM",
+    desc: "把 PDF 扔进 AI 助手，让它帮你提炼核心算法、公式、数据流",
+    tool: "NotebookLM · Claude · ChatGPT",
     color: "#3b82f6",
   },
   {

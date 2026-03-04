@@ -217,7 +217,7 @@ Agent 最核心的能力模式：写-测-错-改循环。Agent不怕出错，它
 
 ### 3. Agent 不只写代码
 
-> 2026年2月：Claude + Palantir 在军事行动中完成了完整的 Agent Loop —— 11分23秒。
+> 2026年2月：Claude + Palantir 在军事行动中完成了完整的 Agent Loop。
 
 *   **同一套模式**：感知→分析→决策→执行→评估 —— 这和 Vibe Coding 里的 Agentic Loop 是完全相同的模式，只是作用域从代码变成了现实世界。
 *   **完全不同的后果**：写代码出 bug 可以 revert。但当 Agent 的"执行权限"从文件系统扩展到**物理世界**，每一个决策都不可逆。
