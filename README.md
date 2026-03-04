@@ -1,73 +1,47 @@
-# React + TypeScript + Vite
+# AI Agent 通识课 — 交互式演示文稿
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> 一堂面向大学生的 AI Agent 通识课，用 Web 幻灯片替代传统 PPT。
 
-Currently, two official plugins are available:
+**在线访问：** https://aleSheng.github.io/agent-intro-course/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 课程内容
 
-## React Compiler
+41 张幻灯片，6 个模块：
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| 模块 | 主题 | 内容 |
+|------|------|------|
+| 封面 | 开场 | 课程介绍、破冰 |
+| 模块一 | 从"会聊天"到"会干活" | ChatBot vs Agent、Agent 能力、基座模型、多模态模型 |
+| 模块二 | AI Agent 实战 | 终端智能体、Vibe Coding、Vibe Research |
+| 模块三 | 工具全景图 | 终端 Agent、AI IDE、知识平台、全景总览 |
+| 模块四 | 清醒认知 | 幻觉/权限/死循环风险、安全底线、Context Engineering |
+| 结尾 | 行动号召 | 判断、建议、金句 |
 
-## Expanding the ESLint configuration
+## 操作方式
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| 操作 | 方式 |
+|------|------|
+| 前进 | `→` / `Space` / `PageDown` / 点击右侧 |
+| 后退 | `←` / `PageUp` / 点击左侧 |
+| 全屏 | `F` |
+| 概览 | `O` |
+| 跳转 | `G` + 数字 |
+| 演讲者备注 | `N` |
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 本地开发
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev       # 启动开发服务器 → http://localhost:5173/
+npm run build     # 生产构建 → dist/
+npm run preview   # 预览生产构建
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 技术栈
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Vite 7 + React 19 + TypeScript 5.9 + TailwindCSS v4
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 部署
+
+- [GitHub Pages 部署指南](docs/deploy-github-pages.md)
+- [Dokploy 部署指南](docs/deploy-dokploy.md)
