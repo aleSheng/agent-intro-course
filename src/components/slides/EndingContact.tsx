@@ -5,7 +5,7 @@ export function EndingContact() {
     <div className="slide module-ending bg-[#0a0a0b] flex items-center justify-center">
       <div className="text-center flex flex-col items-center gap-10">
         <AnimatedText delay={300}>
-          <h2 className="text-5xl font-bold text-[#f5f5f5]">保持联系</h2>
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#f5f5f5]">保持联系</h2>
         </AnimatedText>
 
         <AnimatedText delay={600}>

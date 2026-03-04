@@ -32,7 +32,7 @@ export function Cover() {
       ))}
 
       {/* Content */}
-      <div className="relative z-10 text-center flex flex-col items-center gap-8">
+      <div className="relative z-10 text-center flex flex-col items-center gap-4 lg:gap-8">
         <AnimatedText delay={200}>
           <div className="inline-flex items-center gap-3 px-6 py-2 rounded-full bg-[#141416] border border-[#27272a] mb-4">
             <span className="w-2 h-2 rounded-full bg-accent-green animate-pulse" />
@@ -41,7 +41,7 @@ export function Cover() {
         </AnimatedText>
 
         <AnimatedText delay={500}>
-          <h1 className="text-7xl font-bold text-[#f5f5f5] leading-tight tracking-tight max-w-[1400px]">
+          <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-[#f5f5f5] leading-tight tracking-tight max-w-[1400px]">
             当"不会写代码的人"
             <br />
             <span className="bg-gradient-to-r from-accent-blue via-accent-purple to-accent-cyan bg-clip-text text-transparent">
@@ -57,7 +57,7 @@ export function Cover() {
         </AnimatedText>
 
         <AnimatedText delay={1500}>
-          <div className="mt-8 flex items-center gap-6 text-lg text-[#71717a]">
+          <div className="mt-8 flex items-center gap-3 lg:gap-6 text-lg text-[#71717a]">
             <span>90-120 分钟</span>
             <span className="w-1 h-1 rounded-full bg-[#71717a]" />
             <span>全校通识</span>

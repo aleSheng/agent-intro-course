@@ -10,17 +10,17 @@ const agents = [
 
 export function ToolsTerminal() {
   return (
-    <div className="slide module-3 bg-[#0a0a0b] px-20">
+    <div className="slide module-3 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
       <AnimatedText delay={200}>
-        <h2 className="text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
           终端自主 Agent
         </h2>
-        <p className="text-xl text-[#a1a1aa] mb-12 self-start">
+        <p className="text-xl text-[#a1a1aa] mb-6 lg:mb-12 self-start">
           你的"数字全栈工程师"
         </p>
       </AnimatedText>
 
-      <div className="grid grid-cols-2 gap-8 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 w-full">
         {agents.map((a, i) => (
           <IconCard key={a.title} icon={a.icon} title={a.title} description={a.desc} color={a.color} delay={500 + i * 200} url={a.url} command={a.command} />
         ))}

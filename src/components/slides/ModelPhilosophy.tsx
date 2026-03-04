@@ -6,7 +6,7 @@ export function ModelPhilosophy() {
     <div className="slide module-1 bg-[#0a0a0b] flex items-center justify-center">
       <div className="text-center max-w-[1500px]">
         <AnimatedText delay={300}>
-          <p className="text-5xl font-bold text-[#f5f5f5] leading-relaxed mb-16">
+          <p className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#f5f5f5] leading-relaxed mb-8 lg:mb-16">
             选模型就像<span className="text-accent-blue">选员工</span>：
             <br />
             不是选"最聪明的"，而是选
@@ -15,7 +15,7 @@ export function ModelPhilosophy() {
         </AnimatedText>
 
         <AnimatedText delay={1200}>
-          <div className="flex justify-center gap-8 mt-4">
+          <div className="flex justify-center gap-4 lg:gap-8 mt-4">
             {models.map((m, i) => (
               <div
                 key={m.name}

@@ -30,13 +30,13 @@ export function IconCard({ icon, title, description, color = "#3b82f6", classNam
   return (
     <div
       className={cn(
-        "bg-[#141416] border border-[#27272a] rounded-2xl p-8 flex flex-col gap-4 animate-fade-in-up",
+        "bg-[#141416] border border-[#27272a] rounded-2xl p-4 md:p-6 lg:p-8 flex flex-col gap-3 lg:gap-4 animate-fade-in-up",
         className
       )}
       style={{ animationDelay: `${delay}ms` }}
     >
       <div
-        className="text-4xl w-16 h-16 rounded-xl flex items-center justify-center"
+        className="text-2xl lg:text-4xl w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 rounded-xl flex items-center justify-center"
         style={{ backgroundColor: `${color}20` }}
       >
         {icon}

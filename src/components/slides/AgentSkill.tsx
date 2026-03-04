@@ -2,9 +2,9 @@ import { AnimatedText } from "@/components/shared/AnimatedText";
 
 export function AgentSkill() {
   return (
-    <div className="slide module-1 bg-[#0a0a0b] px-20">
+    <div className="slide module-1 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
       <AnimatedText delay={200}>
-        <h2 className="text-5xl font-bold text-[#f5f5f5] mb-3 self-start">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#f5f5f5] mb-3 self-start">
           Agent Skill：给 AI 装上"技能包"
         </h2>
         <p className="text-xl text-[#a1a1aa] mb-10 self-start">
@@ -15,8 +15,8 @@ export function AgentSkill() {
       {/* Skill是什么 */}
       <AnimatedText delay={500}>
         <div className="bg-[#141416] border border-accent-blue/20 rounded-2xl p-7 mb-8 w-full">
-          <div className="flex items-start gap-5">
-            <span className="text-4xl shrink-0">📦</span>
+          <div className="flex items-start gap-3 lg:gap-5">
+            <span className="text-xl md:text-2xl lg:text-4xl shrink-0">📦</span>
             <div>
               <p className="text-2xl font-bold text-[#f5f5f5] mb-2">Skill = 指令 + 脚本 + 资源</p>
               <p className="text-lg text-[#a1a1aa]">
@@ -30,7 +30,7 @@ export function AgentSkill() {
 
       {/* MCP vs Skill 对比 */}
       <AnimatedText delay={1000}>
-        <div className="flex gap-6 w-full mb-8">
+        <div className="flex gap-3 lg:gap-6 w-full mb-8">
           <div className="flex-1 bg-[#141416] border border-[#27272a] rounded-2xl p-7">
             <div className="flex items-center gap-3 mb-5">
               <div className="w-10 h-10 rounded-lg bg-[#27272a] flex items-center justify-center text-xl">⚡</div>

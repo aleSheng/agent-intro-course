@@ -8,17 +8,17 @@ const steps = [
 
 export function Case4Flow() {
   return (
-    <div className="slide module-2 bg-[#0a0a0b] px-20">
+    <div className="slide module-2 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
       <AnimatedText delay={200}>
-        <h2 className="text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
           非程序员的使用流程
         </h2>
-        <p className="text-xl text-[#a1a1aa] mb-14 self-start">
+        <p className="text-xl text-[#a1a1aa] mb-6 lg:mb-14 self-start">
           全程只需要<strong className="text-[#f5f5f5]">说人话</strong> —— 示例：用 Cursor 做一个个人简历网站
         </p>
       </AnimatedText>
 
-      <div className="flex gap-8 w-full">
+      <div className="flex gap-4 lg:gap-8 w-full">
         {steps.map((step, i) => (
           <AnimatedText key={i} delay={500 + i * 400} className="flex-1">
             <div className="relative">
@@ -28,7 +28,7 @@ export function Case4Flow() {
               >
                 <div className="text-sm font-mono text-[#71717a] mb-4">Step {i + 1}</div>
                 <div
-                  className="w-20 h-20 rounded-2xl mx-auto mb-6 flex items-center justify-center text-4xl"
+                  className="w-20 h-20 rounded-2xl mx-auto mb-6 flex items-center justify-center text-xl md:text-2xl lg:text-4xl"
                   style={{ backgroundColor: `${step.color}15` }}
                 >
                   {step.icon}

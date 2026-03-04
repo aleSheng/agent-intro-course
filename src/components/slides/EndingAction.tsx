@@ -12,10 +12,10 @@ export function EndingAction() {
     <div className="slide module-ending bg-[#0a0a0b] flex items-center justify-center">
       <div className="max-w-[1200px] w-full">
         <AnimatedText delay={300}>
-          <p className="text-4xl text-[#a1a1aa] mb-8 text-center">
+          <p className="text-xl md:text-2xl lg:text-4xl text-[#a1a1aa] mb-8 text-center">
             一个建议——
           </p>
-          <p className="text-3xl text-[#f5f5f5] font-bold mb-12 text-center">
+          <p className="text-3xl text-[#f5f5f5] font-bold mb-6 lg:mb-12 text-center">
             今天回去，试一试：
           </p>
         </AnimatedText>
@@ -23,7 +23,7 @@ export function EndingAction() {
         <div className="space-y-5">
           {items.map((item, i) => (
             <AnimatedText key={i} delay={800 + i * 400}>
-              <div className="flex items-center gap-5 bg-[#141416] border border-[#27272a] rounded-xl px-8 py-5">
+              <div className="flex items-center gap-3 lg:gap-5 bg-[#141416] border border-[#27272a] rounded-xl px-8 py-5">
                 <div className="w-8 h-8 rounded-lg border-2 border-accent-cyan flex items-center justify-center shrink-0">
                   <span className="text-sm font-mono text-accent-cyan">{i + 1}</span>
                 </div>

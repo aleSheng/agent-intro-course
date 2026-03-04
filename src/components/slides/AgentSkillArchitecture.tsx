@@ -41,9 +41,9 @@ const ecosystemItems = [
 
 export function AgentSkillArchitecture() {
   return (
-    <div className="slide module-1 bg-[#0a0a0b] px-20">
+    <div className="slide module-1 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
       <AnimatedText delay={200}>
-        <h2 className="text-5xl font-bold text-[#f5f5f5] mb-3 self-start">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#f5f5f5] mb-3 self-start">
           渐进式披露 <span className="text-3xl text-[#71717a] font-normal">Progressive Disclosure</span>
         </h2>
         <p className="text-xl text-[#a1a1aa] mb-10 self-start">
@@ -55,9 +55,9 @@ export function AgentSkillArchitecture() {
       <div className="w-full space-y-5">
         {tiers.map((tier, i) => (
           <AnimatedText key={tier.label} delay={500 + i * 300}>
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-3 lg:gap-6">
               {/* Left label */}
-              <div className="w-36 shrink-0 text-right">
+              <div className="hidden lg:block w-36 shrink-0 text-right">
                 <p className="text-xl font-bold" style={{ color: tier.label.startsWith("元") ? "#f5c542" : "#22c55e" }}>
                   {tier.label}
                 </p>
@@ -78,7 +78,7 @@ export function AgentSkillArchitecture() {
 
               {/* Right timing */}
               <div
-                className="w-48 shrink-0 rounded-lg px-4 py-2.5 text-center text-base font-semibold"
+                className="hidden lg:block w-48 shrink-0 rounded-lg px-4 py-2.5 text-center text-base font-semibold"
                 style={{ backgroundColor: `${tier.timingColor}22`, color: tier.timingColor }}
               >
                 {tier.timing}
@@ -90,19 +90,19 @@ export function AgentSkillArchitecture() {
 
       {/* Arrows */}
       <AnimatedText delay={1500}>
-        <div className="flex items-center gap-6 mt-3 w-full">
-          <div className="w-36 shrink-0" />
+        <div className="flex items-center gap-3 lg:gap-6 mt-3 w-full">
+          <div className="hidden lg:block w-36 shrink-0" />
           <div className="flex-1 flex justify-between px-8">
             <span className="text-lg text-[#f5c542]">↑ 读取</span>
             <span className="text-lg text-[#f5c542]">执行 ↗</span>
           </div>
-          <div className="w-48 shrink-0" />
+          <div className="hidden lg:block w-48 shrink-0" />
         </div>
       </AnimatedText>
 
       {/* Bottom: ecosystem + insight */}
       <AnimatedText delay={1800}>
-        <div className="mt-8 flex gap-6 w-full">
+        <div className="mt-8 flex flex-col lg:flex-row gap-3 lg:gap-6 w-full">
           {/* Open standard badge */}
           <div className="flex-1 bg-[#141416] border border-[#27272a] rounded-xl px-6 py-5">
             <p className="text-lg font-bold text-[#f5f5f5] mb-3">
@@ -125,7 +125,7 @@ export function AgentSkillArchitecture() {
           </div>
 
           {/* Ecosystem numbers */}
-          <div className="w-80 shrink-0 bg-[#141416] border border-[#27272a] rounded-xl px-6 py-5">
+          <div className="w-full lg:w-80 lg:shrink-0 bg-[#141416] border border-[#27272a] rounded-xl px-6 py-5">
             <p className="text-lg font-bold text-[#f5f5f5] mb-3">📊 生态规模（2026.03）</p>
             <div className="space-y-2 text-base text-[#a1a1aa]">
               <p><span className="text-accent-green font-bold">27 万+</span> 技能在 SkillsMP 市场</p>

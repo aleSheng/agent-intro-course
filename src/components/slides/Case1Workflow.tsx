@@ -35,17 +35,17 @@ const alternatives = [
 
 export function Case1Workflow() {
   return (
-    <div className="slide module-2 bg-[#0a0a0b] px-20">
+    <div className="slide module-2 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
       <AnimatedText delay={200}>
-        <h2 className="text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
           OpenClaw 太复杂？你还有更多选择
         </h2>
-        <p className="text-xl text-[#a1a1aa] mb-14 self-start">
+        <p className="text-xl text-[#a1a1aa] mb-6 lg:mb-14 self-start">
           终端智能体生态正在快速扩展——找到适合你的那个
         </p>
       </AnimatedText>
 
-      <div className="grid grid-cols-5 gap-5 w-full">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 lg:gap-5 w-full">
         {alternatives.map((alt, i) => (
           <AnimatedText key={alt.name} delay={500 + i * 200}>
             <div

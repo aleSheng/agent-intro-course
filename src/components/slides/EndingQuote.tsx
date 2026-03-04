@@ -4,7 +4,7 @@ export function EndingQuote() {
   return (
     <div className="slide module-ending bg-[#0a0a0b] flex items-center justify-center">
       <div className="text-center max-w-[1400px]">
-        <p className="text-6xl font-bold text-[#f5f5f5] leading-relaxed tracking-tight">
+        <p className="text-3xl md:text-4xl lg:text-6xl font-bold text-[#f5f5f5] leading-relaxed tracking-tight">
           <TypewriterText
             text="AI won't replace you. But someone using AI will."
             speed={60}

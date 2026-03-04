@@ -26,17 +26,17 @@ const stages = [
 
 export function BackgroundAgent() {
   return (
-    <div className="slide module-1 bg-[#0a0a0b] px-20">
+    <div className="slide module-1 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
       <AnimatedText delay={200}>
-        <h2 className="text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
           下一步：<span className="text-accent-cyan">Background Agent</span>
         </h2>
-        <p className="text-xl text-[#a1a1aa] mb-14 self-start">
+        <p className="text-xl text-[#a1a1aa] mb-6 lg:mb-14 self-start">
           从"你盯着它干"到"它自己在后台干" —— 自驾代码库
         </p>
       </AnimatedText>
 
-      <div className="flex gap-6 w-full items-stretch">
+      <div className="flex gap-3 lg:gap-6 w-full items-stretch">
         {stages.map((s, i) => (
           <AnimatedText key={i} delay={500 + i * 300} className="flex-1">
             <div

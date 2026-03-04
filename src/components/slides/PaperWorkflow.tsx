@@ -33,12 +33,12 @@ const steps = [
 
 export function PaperWorkflow() {
   return (
-    <div className="slide module-2 bg-[#0a0a0b] px-20">
+    <div className="slide module-2 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
       <AnimatedText delay={200}>
-        <h2 className="text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
           复现论文四步法
         </h2>
-        <p className="text-xl text-[#a1a1aa] mb-12 self-start">
+        <p className="text-xl text-[#a1a1aa] mb-6 lg:mb-12 self-start">
           每一步都有 AI 工具接力
         </p>
       </AnimatedText>
@@ -47,7 +47,7 @@ export function PaperWorkflow() {
         {steps.map((step, i) => (
           <AnimatedText key={i} delay={400 + i * 300}>
             <div
-              className="bg-[#141416] border border-[#27272a] rounded-xl px-8 py-5 flex items-center gap-8"
+              className="bg-[#141416] border border-[#27272a] rounded-xl px-8 py-5 flex items-center gap-4 lg:gap-8"
               style={{ borderLeftWidth: "4px", borderLeftColor: step.color }}
             >
               <span

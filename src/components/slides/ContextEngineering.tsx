@@ -2,17 +2,17 @@ import { AnimatedText } from "@/components/shared/AnimatedText";
 
 export function ContextEngineering() {
   return (
-    <div className="slide module-4 bg-[#0a0a0b] px-20">
+    <div className="slide module-4 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
       <AnimatedText delay={200}>
-        <h2 className="text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
           Context Engineering
         </h2>
-        <p className="text-xl text-[#a1a1aa] mb-12 self-start">
+        <p className="text-xl text-[#a1a1aa] mb-6 lg:mb-12 self-start">
           用精准的自然语言描述你到底要什么——这才是核心技能
         </p>
       </AnimatedText>
 
-      <div className="flex gap-12 w-full">
+      <div className="flex flex-col lg:flex-row gap-4 lg:gap-12 w-full">
         <AnimatedText delay={500} className="flex-1">
           <div className="bg-accent-red/5 border border-accent-red/20 rounded-2xl p-8 h-full">
             <div className="flex items-center gap-3 mb-6">
@@ -47,7 +47,7 @@ export function ContextEngineering() {
       </div>
 
       <AnimatedText delay={1500}>
-        <div className="mt-10 flex items-center gap-6 w-full">
+        <div className="mt-10 flex items-center gap-3 lg:gap-6 w-full">
           <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#27272a] to-transparent" />
           <p className="text-2xl text-[#f5f5f5] font-semibold shrink-0">
             越会描述需求的人，Agent 为你创造的价值越大

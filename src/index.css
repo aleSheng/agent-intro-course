@@ -24,7 +24,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   background: var(--color-background);
   color: var(--color-foreground);
   font-family: var(--font-sans);
@@ -33,16 +33,32 @@ html, body {
 }
 
 .slide {
-  width: 1920px;
-  height: 1080px;
+  width: 100%;
+  min-height: 100dvh;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 80px 120px;
+  padding: 2rem 1rem;
   box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  .slide { padding: 2.5rem 2rem; }
+}
+
+@media (min-width: 768px) {
+  .slide { padding: 3rem 3rem; }
+}
+
+@media (min-width: 1024px) {
+  .slide { padding: 3.5rem 5rem; }
+}
+
+@media (min-width: 1440px) {
+  .slide { padding: 5rem 7.5rem; }
 }
 
 .module-cover { --module-accent: var(--color-foreground); }

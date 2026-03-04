@@ -5,7 +5,7 @@ export function Case3Insight() {
     <div className="slide module-2 bg-[#0a0a0b] flex items-center justify-center">
       <div className="text-center max-w-[1400px]">
         <AnimatedText delay={300}>
-          <p className="text-5xl font-bold text-[#f5f5f5] leading-relaxed">
+          <p className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#f5f5f5] leading-relaxed">
             信息获取的方式正在发生根本转变：
           </p>
         </AnimatedText>
@@ -14,7 +14,7 @@ export function Case3Insight() {
             <div className="text-center">
               <p className="text-3xl text-[#71717a] line-through">‍"我去读"</p>
             </div>
-            <div className="text-4xl text-accent-purple">→</div>
+            <div className="text-xl md:text-2xl lg:text-4xl text-accent-purple">→</div>
             <div className="text-center">
               <p className="text-3xl text-accent-purple font-bold">"它来讲给我听"</p>
               <p className="text-3xl text-accent-green font-bold mt-2">"我来直接问它"</p>
@@ -23,7 +23,7 @@ export function Case3Insight() {
         </AnimatedText>
 
         <AnimatedText delay={2200}>
-          <div className="mt-12 flex justify-center gap-6">
+          <div className="mt-12 flex flex-col sm:flex-row justify-center gap-3 lg:gap-6">
             <div className="bg-[#141416] border border-accent-red/20 rounded-2xl px-8 py-6 text-left max-w-[420px]">
               <p className="text-lg font-bold text-accent-red mb-3">以前复现论文</p>
               <div className="space-y-2 text-lg text-[#a1a1aa]">

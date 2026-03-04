@@ -3,15 +3,15 @@ import { TerminalWindow } from "@/components/shared/TerminalWindow";
 
 export function ChatbotVsAgent() {
   return (
-    <div className="slide module-1 bg-[#0a0a0b] px-20">
+    <div className="slide module-1 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
       <AnimatedText delay={200}>
-        <h2 className="text-5xl font-bold text-[#f5f5f5] mb-16 self-start">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#f5f5f5] mb-8 lg:mb-16 self-start">
           <span className="text-accent-blue">ChatBot</span> vs{" "}
           <span className="text-accent-purple">Agent</span>
         </h2>
       </AnimatedText>
 
-      <div className="flex gap-12 w-full">
+      <div className="flex flex-col lg:flex-row gap-4 lg:gap-12 w-full">
         {/* ChatBot side */}
         <AnimatedText delay={400} className="flex-1">
           <div className="bg-[#141416] border border-[#27272a] rounded-2xl p-10 h-full">

@@ -2,17 +2,17 @@ import { AnimatedText } from "@/components/shared/AnimatedText";
 
 export function Case3Notebook() {
   return (
-    <div className="slide module-2 bg-[#0a0a0b] px-20">
+    <div className="slide module-2 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
       <AnimatedText delay={200}>
-        <h2 className="text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
           NotebookLM：论文秒变播客
         </h2>
-        <p className="text-xl text-[#a1a1aa] mb-12 self-start">
+        <p className="text-xl text-[#a1a1aa] mb-6 lg:mb-12 self-start">
           Google 出品 · 把学术论文变成双人播客对谈
         </p>
       </AnimatedText>
 
-      <div className="flex gap-12 w-full items-stretch">
+      <div className="flex flex-col lg:flex-row gap-4 lg:gap-12 w-full items-stretch">
         <AnimatedText delay={500} className="flex-1">
           <div className="bg-[#141416] border border-[#27272a] rounded-2xl p-8 h-full">
             <div className="flex items-center gap-3 mb-6">
@@ -42,7 +42,7 @@ export function Case3Notebook() {
         </AnimatedText>
 
         <AnimatedText delay={800} className="flex items-center">
-          <div className="text-4xl text-accent-purple">→</div>
+          <div className="text-xl md:text-2xl lg:text-4xl text-accent-purple">→</div>
         </AnimatedText>
 
         <AnimatedText delay={1000} className="flex-1">

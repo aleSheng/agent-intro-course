@@ -10,7 +10,7 @@ export function ToolsCover() {
           </div>
         </AnimatedText>
         <AnimatedText delay={500}>
-          <h2 className="text-7xl font-bold text-[#f5f5f5] mb-6">
+          <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold text-[#f5f5f5] mb-6">
             工具全景图
           </h2>
         </AnimatedText>
@@ -20,7 +20,7 @@ export function ToolsCover() {
           </p>
         </AnimatedText>
         <AnimatedText delay={1400}>
-          <div className="mt-12 flex justify-center gap-8">
+          <div className="mt-12 flex justify-center gap-4 lg:gap-8">
             {["⌨️ 终端 Agent", "🖥️ AI IDE", "📚 知识平台"].map((label, i) => (
               <div
                 key={i}

@@ -3,12 +3,12 @@ import { TerminalWindow } from "@/components/shared/TerminalWindow";
 
 export function RiskPermission() {
   return (
-    <div className="slide module-4 bg-[#0a0a0b] px-20">
+    <div className="slide module-4 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
       <AnimatedText delay={200}>
-        <h2 className="text-5xl font-bold text-accent-red mb-4 self-start">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-accent-red mb-4 self-start">
           翻车 ②：权限风险
         </h2>
-        <p className="text-xl text-[#a1a1aa] mb-12 self-start">
+        <p className="text-xl text-[#a1a1aa] mb-6 lg:mb-12 self-start">
           终端 Agent 有读写文件、执行命令的权限
         </p>
       </AnimatedText>

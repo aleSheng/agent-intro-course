@@ -10,7 +10,7 @@ export function Case2Cover() {
           </div>
         </AnimatedText>
         <AnimatedText delay={500}>
-          <h2 className="text-7xl font-bold text-[#f5f5f5] mb-6">
+          <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold text-[#f5f5f5] mb-6">
             Vibe Coding
           </h2>
         </AnimatedText>

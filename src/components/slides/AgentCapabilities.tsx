@@ -11,21 +11,21 @@ const capabilities = [
 
 export function AgentCapabilities() {
   return (
-    <div className="slide module-1 bg-[#0a0a0b] px-20">
+    <div className="slide module-1 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
       <AnimatedText delay={200}>
-        <h2 className="text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
           Agent 能做什么？
         </h2>
-        <p className="text-xl text-[#a1a1aa] mb-12 self-start">
+        <p className="text-xl text-[#a1a1aa] mb-6 lg:mb-12 self-start">
           从"给一个目标"到"任务完成"，全程自主
         </p>
       </AnimatedText>
 
-      <div className="grid grid-cols-3 gap-6 w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-6 w-full">
         {capabilities.map((cap, i) => (
           <AnimatedText key={i} delay={400 + i * 200}>
-            <div className="bg-[#141416] border border-[#27272a] rounded-2xl p-8 flex items-start gap-5 hover:border-accent-blue/30 transition-colors">
-              <div className="text-4xl w-16 h-16 rounded-xl bg-accent-blue/10 flex items-center justify-center shrink-0">
+            <div className="bg-[#141416] border border-[#27272a] rounded-2xl p-8 flex items-start gap-3 lg:gap-5 hover:border-accent-blue/30 transition-colors">
+              <div className="text-xl md:text-2xl lg:text-4xl w-16 h-16 rounded-xl bg-accent-blue/10 flex items-center justify-center shrink-0">
                 {cap.icon}
               </div>
               <div>

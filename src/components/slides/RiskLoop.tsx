@@ -2,21 +2,21 @@ import { AnimatedText } from "@/components/shared/AnimatedText";
 
 export function RiskLoop() {
   return (
-    <div className="slide module-4 bg-[#0a0a0b] px-20">
+    <div className="slide module-4 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
       <AnimatedText delay={200}>
-        <h2 className="text-5xl font-bold text-accent-red mb-4 self-start">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-accent-red mb-4 self-start">
           翻车 ③：死循环
         </h2>
-        <p className="text-xl text-[#a1a1aa] mb-12 self-start">
+        <p className="text-xl text-[#a1a1aa] mb-6 lg:mb-12 self-start">
           Agent 可能反复用同一个错误方法尝试修复同一个 bug
         </p>
       </AnimatedText>
 
-      <div className="flex gap-12 w-full items-center">
+      <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 w-full items-center">
         <AnimatedText delay={500} className="flex-1">
           <div className="flex flex-col items-center">
             {/* Loop visualization */}
-            <div className="relative w-[400px] h-[400px]">
+            <div className="relative w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] lg:w-[400px] lg:h-[400px]">
               <svg viewBox="0 0 400 400" className="w-full h-full">
                 {/* Circular arrow */}
                 <circle cx="200" cy="200" r="150" fill="none" stroke="#ef444440" strokeWidth="3" strokeDasharray="10 5" />
@@ -39,7 +39,7 @@ export function RiskLoop() {
               {/* Center counter */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center">
-                  <p className="text-6xl font-mono font-bold text-accent-red">∞</p>
+                  <p className="text-3xl md:text-4xl lg:text-6xl font-mono font-bold text-accent-red">∞</p>
                   <p className="text-xl text-[#71717a] mt-2">无限重试</p>
                 </div>
               </div>

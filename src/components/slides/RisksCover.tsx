@@ -10,7 +10,7 @@ export function RisksCover() {
           </div>
         </AnimatedText>
         <AnimatedText delay={500}>
-          <h2 className="text-7xl font-bold text-[#f5f5f5] mb-6">
+          <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold text-[#f5f5f5] mb-6">
             清醒认知
           </h2>
         </AnimatedText>
@@ -20,7 +20,7 @@ export function RisksCover() {
           </p>
         </AnimatedText>
         <AnimatedText delay={1400}>
-          <div className="mt-12 flex justify-center gap-8">
+          <div className="mt-12 flex justify-center gap-4 lg:gap-8">
             <div className="px-6 py-3 bg-accent-red/10 border border-accent-red/30 rounded-xl text-xl text-accent-red">⚠️ Agent 会翻车</div>
             <div className="px-6 py-3 bg-accent-amber/10 border border-accent-amber/30 rounded-xl text-xl text-accent-amber">🛡️ 安全底线</div>
             <div className="px-6 py-3 bg-accent-green/10 border border-accent-green/30 rounded-xl text-xl text-accent-green">💎 真正值钱的能力</div>

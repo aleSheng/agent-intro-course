@@ -9,12 +9,12 @@ const rows = [
 
 export function RealValue() {
   return (
-    <div className="slide module-4 bg-[#0a0a0b] px-20">
+    <div className="slide module-4 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
       <AnimatedText delay={200}>
-        <h2 className="text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
           真正值钱的能力
         </h2>
-        <p className="text-xl text-[#a1a1aa] mb-12 self-start">
+        <p className="text-xl text-[#a1a1aa] mb-6 lg:mb-12 self-start">
           AI 时代的能力重估
         </p>
       </AnimatedText>
@@ -22,14 +22,14 @@ export function RealValue() {
       <AnimatedText delay={400}>
         <div className="w-full rounded-2xl overflow-hidden border border-[#27272a]">
           {/* Header */}
-          <div className="grid grid-cols-2 bg-[#141416] border-b border-[#27272a]">
+          <div className="grid grid-cols-1 md:grid-cols-2 bg-[#141416] border-b border-[#27272a]">
             <div className="px-10 py-5 text-xl font-semibold text-[#71717a]">你以为值钱的 ❌</div>
             <div className="px-10 py-5 text-xl font-semibold text-accent-green">真正值钱的 ✅</div>
           </div>
           {/* Rows */}
           {rows.map((row, i) => (
             <AnimatedText key={i} delay={600 + i * 300}>
-              <div className="grid grid-cols-2 border-b border-[#27272a] last:border-b-0">
+              <div className="grid grid-cols-1 md:grid-cols-2 border-b border-[#27272a] last:border-b-0">
                 <div className="px-10 py-6 text-xl text-[#71717a] line-through decoration-accent-red/50">
                   {row.think}
                 </div>

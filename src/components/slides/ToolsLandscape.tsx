@@ -19,19 +19,19 @@ const workflow = [
 
 export function ToolsLandscape() {
   return (
-    <div className="slide module-3 bg-[#0a0a0b] px-20">
+    <div className="slide module-3 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
       <AnimatedText delay={200}>
-        <h2 className="text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
           全景总览：从想法到成果
         </h2>
-        <p className="text-xl text-[#a1a1aa] mb-16 self-start">
+        <p className="text-xl text-[#a1a1aa] mb-8 lg:mb-16 self-start">
           每个阶段都有 AI 工具覆盖 —— 不会编程的人也能走完全流程
         </p>
       </AnimatedText>
 
-      <div className="flex items-start w-full gap-3">
+      <div className="grid grid-cols-2 lg:grid-cols-4 w-full gap-3">
         {workflow.map((stage, i) => (
-          <AnimatedText key={i} delay={500 + i * 300} className="flex-1">
+          <AnimatedText key={i} delay={500 + i * 300}>
             <div className="flex flex-col items-center">
               <div
                 className="w-full py-5 rounded-t-xl text-center font-bold text-xl text-[#0a0a0b]"

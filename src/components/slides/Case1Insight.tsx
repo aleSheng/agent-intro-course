@@ -2,14 +2,14 @@ import { AnimatedText } from "@/components/shared/AnimatedText";
 
 export function Case1Insight() {
   return (
-    <div className="slide module-2 bg-[#0a0a0b] px-20">
+    <div className="slide module-2 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
       <AnimatedText delay={200}>
-        <h2 className="text-5xl font-bold text-[#f5f5f5] mb-12 self-start">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#f5f5f5] mb-6 lg:mb-12 self-start">
           冷静看 OpenClaw
         </h2>
       </AnimatedText>
 
-      <div className="flex gap-8 w-full">
+      <div className="flex gap-4 lg:gap-8 w-full">
         {/* 质疑一侧 */}
         <AnimatedText delay={500} className="flex-1">
           <div className="bg-[#141416] border border-accent-red/20 rounded-2xl p-8 h-full">

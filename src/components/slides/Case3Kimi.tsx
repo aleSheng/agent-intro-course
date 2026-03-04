@@ -2,17 +2,17 @@ import { AnimatedText } from "@/components/shared/AnimatedText";
 
 export function Case3Kimi() {
   return (
-    <div className="slide module-2 bg-[#0a0a0b] px-20">
+    <div className="slide module-2 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
       <AnimatedText delay={200}>
-        <h2 className="text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
           Kimi：超长上下文的力量
         </h2>
-        <p className="text-xl text-[#a1a1aa] mb-12 self-start">
+        <p className="text-xl text-[#a1a1aa] mb-6 lg:mb-12 self-start">
           整本书 / 整个代码库 → 你的私人顾问
         </p>
       </AnimatedText>
 
-      <div className="flex items-center gap-12 w-full">
+      <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-12 w-full">
         {/* Input visualization */}
         <AnimatedText delay={500} className="flex-1">
           <div className="flex flex-col gap-4">
@@ -42,7 +42,7 @@ export function Case3Kimi() {
 
         <AnimatedText delay={1000}>
           <div className="flex flex-col items-center gap-3">
-            <div className="text-5xl">📥</div>
+            <div className="text-2xl md:text-4xl lg:text-5xl">📥</div>
             <div className="text-2xl text-accent-purple font-mono">一次性喂入</div>
             <div className="text-3xl">↓</div>
           </div>

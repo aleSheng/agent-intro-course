@@ -10,17 +10,17 @@ const ides = [
 
 export function ToolsIDE() {
   return (
-    <div className="slide module-3 bg-[#0a0a0b] px-20">
+    <div className="slide module-3 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
       <AnimatedText delay={200}>
-        <h2 className="text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
           AI Native 开发环境
         </h2>
-        <p className="text-xl text-[#a1a1aa] mb-12 self-start">
+        <p className="text-xl text-[#a1a1aa] mb-6 lg:mb-12 self-start">
           "智能驾驶舱"——让编码体验原生融合 AI
         </p>
       </AnimatedText>
 
-      <div className="grid grid-cols-2 gap-8 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 w-full">
         {ides.map((ide, i) => (
           <IconCard key={ide.title} icon={ide.icon} title={ide.title} description={ide.desc} color={ide.color} delay={500 + i * 200} url={ide.url} />
         ))}

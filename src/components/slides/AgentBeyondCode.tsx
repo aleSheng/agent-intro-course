@@ -10,9 +10,9 @@ const killChain = [
 
 export function AgentBeyondCode() {
   return (
-    <div className="slide module-4 bg-[#0a0a0b] px-20">
+    <div className="slide module-4 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
       <AnimatedText delay={200}>
-        <h2 className="text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
           Agent 不只写代码
         </h2>
         <p className="text-xl text-[#a1a1aa] mb-10 self-start">
@@ -21,7 +21,7 @@ export function AgentBeyondCode() {
       </AnimatedText>
 
       {/* Kill chain as agent loop */}
-      <div className="flex gap-3 w-full mb-10">
+      <div className="grid grid-cols-3 lg:grid-cols-5 gap-3 w-full mb-10">
         {killChain.map((step, i) => (
           <AnimatedText key={i} delay={500 + i * 200} className="flex-1">
             <div className="flex flex-col items-center">
@@ -43,7 +43,7 @@ export function AgentBeyondCode() {
 
       {/* Core message */}
       <AnimatedText delay={1600}>
-        <div className="w-full flex gap-6">
+        <div className="w-full flex flex-col md:flex-row gap-3 lg:gap-6">
           <div className="flex-1 bg-[#141416] border border-[#27272a] rounded-2xl p-7">
             <h3 className="text-xl font-bold text-[#f5f5f5] mb-3">同一套模式</h3>
             <p className="text-lg text-[#a1a1aa] leading-relaxed">

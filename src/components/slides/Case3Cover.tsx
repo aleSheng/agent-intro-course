@@ -10,7 +10,7 @@ export function Case3Cover() {
           </div>
         </AnimatedText>
         <AnimatedText delay={500}>
-          <h2 className="text-7xl font-bold text-[#f5f5f5] mb-6">
+          <h2 className="text-3xl md:text-5xl lg:text-7xl font-bold text-[#f5f5f5] mb-6">
             Vibe Research
           </h2>
         </AnimatedText>
@@ -20,12 +20,12 @@ export function Case3Cover() {
           </p>
         </AnimatedText>
         <AnimatedText delay={1400}>
-          <div className="mt-12 flex justify-center gap-6">
-            <div className="text-6xl">📚</div>
-            <div className="text-4xl text-[#27272a] self-center">→</div>
-            <div className="text-6xl">🎙️</div>
-            <div className="text-4xl text-[#27272a] self-center">→</div>
-            <div className="text-6xl">🔬</div>
+          <div className="mt-12 flex justify-center gap-3 lg:gap-6">
+            <div className="text-3xl md:text-4xl lg:text-6xl">📚</div>
+            <div className="text-xl md:text-2xl lg:text-4xl text-[#27272a] self-center">→</div>
+            <div className="text-3xl md:text-4xl lg:text-6xl">🎙️</div>
+            <div className="text-xl md:text-2xl lg:text-4xl text-[#27272a] self-center">→</div>
+            <div className="text-3xl md:text-4xl lg:text-6xl">🔬</div>
           </div>
           <p className="mt-4 text-xl text-[#71717a]">枯燥论文 → 轻松播客 → 可复现实验</p>
         </AnimatedText>

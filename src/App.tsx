@@ -183,7 +183,7 @@ function App() {
 
   return (
     <div
-      className="h-screen w-full overflow-hidden bg-[#0a0a0b] select-none"
+      className="min-h-dvh w-full overflow-x-hidden bg-[#0a0a0b] select-none"
       onDoubleClick={toggleFullscreen}
     >
       {showOverview && (

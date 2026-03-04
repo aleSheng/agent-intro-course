@@ -2,17 +2,17 @@ import { AnimatedText } from "@/components/shared/AnimatedText";
 
 export function RiskHallucination() {
   return (
-    <div className="slide module-4 bg-[#0a0a0b] px-20">
+    <div className="slide module-4 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
       <AnimatedText delay={200}>
-        <h2 className="text-5xl font-bold text-accent-red mb-4 self-start">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-accent-red mb-4 self-start">
           翻车 ①：幻觉
         </h2>
-        <p className="text-xl text-[#a1a1aa] mb-12 self-start">
+        <p className="text-xl text-[#a1a1aa] mb-6 lg:mb-12 self-start">
           Agent 会一本正经地编造不存在的东西
         </p>
       </AnimatedText>
 
-      <div className="flex gap-12 w-full">
+      <div className="flex flex-col lg:flex-row gap-4 lg:gap-12 w-full">
         <AnimatedText delay={500} className="flex-1">
           <div className="bg-[#141416] border border-[#27272a] rounded-2xl p-8">
             <div className="flex items-center gap-3 mb-6">
