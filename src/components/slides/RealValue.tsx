@@ -41,6 +41,12 @@ export function RealValue() {
           ))}
         </div>
       </AnimatedText>
+
+      <AnimatedText delay={1800}>
+        <p className="text-xl text-accent-cyan text-center mt-8 lg:mt-12 font-semibold w-full">
+          把你的能力构建在 AI 之上——技术每进一步，你就水涨船高
+        </p>
+      </AnimatedText>
     </div>
   );
 }
