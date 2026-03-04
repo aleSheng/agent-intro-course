@@ -33,7 +33,7 @@ const categories = [
 
 export function ModelMultimodal() {
   return (
-    <div className="slide module-1 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
+    <div className="slide module-3 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
       <AnimatedText delay={200}>
         <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
           AI 不只会写字
@@ -75,6 +75,12 @@ export function ModelMultimodal() {
           </AnimatedText>
         ))}
       </div>
+
+      <AnimatedText delay={1500}>
+        <p className="text-xl text-accent-green text-center mt-8 font-semibold w-full">
+          这些多模态能力与你的专业直接相关——不管你学什么，都值得亲手试一试
+        </p>
+      </AnimatedText>
     </div>
   );
 }

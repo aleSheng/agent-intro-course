@@ -52,6 +52,12 @@ export function Safety() {
           </AnimatedText>
         ))}
       </div>
+
+      <AnimatedText delay={1600}>
+        <p className="text-xl text-accent-green text-center mt-10 font-semibold w-full">
+          记住这三条，你就可以放心去试——安全底线守住，大胆探索没问题
+        </p>
+      </AnimatedText>
     </div>
   );
 }

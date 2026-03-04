@@ -18,15 +18,17 @@ export const moduleColors: Record<ModuleId, string> = {
 
 export const moduleNames: Record<ModuleId, string> = {
   cover: "封面",
-  module1: '从\u201C会聊天\u201D到\u201C会干活\u201D',
-  module2: "AI Agent 实战",
-  module3: "工具全景图",
+  module1: "核心概念",
+  module2: "实战与方法",
+  module3: "全景与进化",
   module4: "清醒认知",
   ending: "结尾",
 };
 
 export const slides: SlideConfig[] = [
-  // Cover (2 slides)
+  // ═══════════════════════════════════════════
+  // ACT 1: 起 — "颠覆认知"（6张）
+  // ═══════════════════════════════════════════
   {
     id: "cover",
     title: "封面",
@@ -37,10 +39,8 @@ export const slides: SlideConfig[] = [
     id: "icebreaker",
     title: "破冰",
     module: "cover",
-    notes: "停顿3秒，让大家读完。然后说：这不是一堂教你写代码的课。",
+    notes: "先问：为了跟上AI，有多少人想过学编程？让大家举手。停顿3秒，观察反应。然后抛出暴论：跟上AI不需要学编程。最后一行是全课核心——'去试。找最新最好的工具，体验它，然后迭代自己。'——慢读，停顿让大家消化。",
   },
-
-  // Module 1: 从"会聊天"到"会干活" (9 slides)
   {
     id: "chatbot-vs-agent",
     title: "ChatBot vs Agent",
@@ -60,76 +60,22 @@ export const slides: SlideConfig[] = [
     notes: "逐步展示Agent的6个核心能力。每个能力举一个具体例子。",
   },
   {
-    id: "background-agent",
-    title: "Background Agent",
-    module: "module1",
-    notes: "展示Agent的进化方向：从你盯着它干，到它在后台自主工作。核心概念来自 background-agents.com。强调三个阶段的区别：in the seat → in the loop → on the loop。",
-  },
-  {
-    id: "agent-skill",
-    title: "Agent Skill",
-    module: "module1",
-    notes: "Agent Skill = 给AI装技能包。一个文件夹（SKILL.md + 脚本 + 资源），Agent按需加载。重点讲清MCP vs Skill的区别：MCP给数据（送食材），Skill教方法（给菜谱）。2025.12成为开放标准，20+平台采用。",
-  },
-  {
-    id: "agent-skill-architecture",
-    title: "渐进式披露",
-    module: "module1",
-    notes: "Skill的核心架构：三层渐进式加载——元数据层（始终加载，~100 tokens）、指令层（激活时加载）、资源层（按需读取/执行）。效果：Agent知道数百技能但上下文零浪费。生态已爆发：27万+技能、20+平台互通。",
-  },
-  {
-    id: "model-overview",
-    title: "基座模型速览",
-    module: "module1",
-    notes: "快速过完6个模型（含 DeepSeek R1），重点是让大家知道'不止一个选择'。",
-  },
-  {
-    id: "model-multimodal",
-    title: "多模态模型",
-    module: "module1",
-    notes: "语言模型之外，还有语音、生图、生视频、多模态理解等模型。AI不只会写字，还会说话、画画、拍视频。",
-  },
-  {
-    id: "model-philosophy",
-    title: "选模型哲学",
-    module: "module1",
-    notes: "选员工而非选天才。不同任务用不同模型，就像公司不同岗位招不同的人。",
-  },
-
-  // Module 2: AI Agent 实战 (13 slides)
-
-  // Section A: 终端智能体 (4 slides)
-  {
-    id: "agent-intro",
-    title: "终端智能体：OpenClaw",
-    module: "module2",
-    notes: "介绍终端智能体概念，以OpenClaw为代表。技术原理是 LLM + 截图 + 鼠标脚本的循环。很火但争议也大，而且配置复杂。",
-  },
-  {
-    id: "agent-ecosystem",
-    title: "更多选择",
-    module: "module2",
-    notes: "OpenClaw复杂度高，但有很多更好的替代品。nanoClaw极简入门、zeroclaw零配置、Kimi Claw超长上下文、MaxClaw极致自动化、Manus全能助手。",
-  },
-  {
     id: "agentic-loop",
     title: "Agentic Loop",
-    module: "module2",
-    notes: "这是Agent最核心的能力模式：写-测-错-改循环。Agent不怕出错，它会自己修。",
-  },
-  {
-    id: "agent-insight",
-    title: "冷静看 OpenClaw",
-    module: "module2",
-    notes: "左右分栏：争议 vs 价值。技术门槛低、效率差、但降低了门槛和推动了开源。真正突破方向是更好的视觉编码器和 Accessibility Tree 理解。教大家用批判性思维看待技术热点。",
+    module: "module1",
+    notes: "这是Agent最核心的能力模式：写-测-错-改循环。Agent不怕出错，它会自己修。概念高潮——为后续实战铺路。",
   },
 
-  // Section B: Vibe Coding (4 slides)
+  // ═══════════════════════════════════════════
+  // ACT 2: 承 — "眼见为实"（24张）
+  // ═══════════════════════════════════════════
+
+  // Section A: Vibe Coding（4张）
   {
     id: "vibe-coding",
     title: "Vibe Coding",
     module: "module2",
-    notes: "Vibe Coding = 跟着感觉写代码。不需要学编程，只需要会描述需求。现场演示前的预告。",
+    notes: "概念讲完，进入实战。Vibe Coding = 跟着感觉写代码。只需要会描述需求，AI替你搞定实现。现场演示前的预告。",
   },
   {
     id: "vibe-coding-demo",
@@ -150,7 +96,7 @@ export const slides: SlideConfig[] = [
     notes: "未来的编程更像当产品经理。一个人+一个下午+这些工具=一个真实可用的产品。引导大家思考自己的专业如何结合。",
   },
 
-  // Section C: Vibe Research (5 slides)
+  // Section B: Vibe Research（5张）
   {
     id: "vibe-research",
     title: "Vibe Research",
@@ -165,9 +111,9 @@ export const slides: SlideConfig[] = [
   },
   {
     id: "vibe-research-kimi",
-    title: "Kimi 超长上下文",
+    title: "云端智能体：超长上下文",
     module: "module2",
-    notes: "整本教材变成你的私人顾问。现场可以演示把一本书扔进去提问。",
+    notes: "整本教材变成你的私人顾问。现场可以演示把一本书扔进去提问。类似产品很多：Kimi、ChatGPT、Gemini等都支持。",
   },
   {
     id: "vibe-research-paper",
@@ -182,7 +128,55 @@ export const slides: SlideConfig[] = [
     notes: "信息获取方式的根本转变。加上论文复现的突破：以前读懂每行代码，现在只需读懂论文本身。核心能力回到理解问题本身。",
   },
 
-  // Module 3: 工具全景图 (5 slides)
+  // Section C: 方法论（1张）
+  {
+    id: "context-engineering",
+    title: "Context Engineering",
+    module: "module2",
+    notes: "回顾刚才的Demo——效果好不好，关键在这一步。展示模糊vs精准prompt对比。精准描述需求的能力，会在不断尝试中越磨越利。",
+  },
+
+  // Section D: 终端智能体（3张）
+  {
+    id: "agent-intro",
+    title: "终端智能体：OpenClaw",
+    module: "module2",
+    notes: "从Demo转到终端智能体。以OpenClaw为代表。技术原理是 LLM + 截图 + 鼠标脚本的循环。很火但争议也大，而且配置复杂。",
+  },
+  {
+    id: "agent-ecosystem",
+    title: "更多选择",
+    module: "module2",
+    notes: "OpenClaw复杂度高，但有很多更好的替代品。nanoClaw极简入门、zeroclaw零配置、Gemini CLI百万上下文、云端Agent无需本地环境、Manus全能助手。",
+  },
+  {
+    id: "agent-insight",
+    title: "冷静看 OpenClaw",
+    module: "module2",
+    notes: "左右分栏：争议 vs 价值。技术门槛低、效率差、但降低了门槛和推动了开源。真正突破方向是更好的视觉编码器和 Accessibility Tree 理解。教大家用批判性思维看待技术热点。",
+  },
+
+  // Section E: 基座模型（3张）
+  {
+    id: "model-overview",
+    title: "基座模型速览",
+    module: "module3",
+    notes: "讲完实战案例，转到底层引擎。快速过完6个模型（含 DeepSeek R1），重点是让大家知道'不止一个选择'。",
+  },
+  {
+    id: "model-multimodal",
+    title: "多模态模型",
+    module: "module3",
+    notes: "语言模型之外，还有语音、生图、生视频、多模态理解等模型。AI不只会写字，还会说话、画画、拍视频。这些能力与任何专业都相关，值得亲手试一试。",
+  },
+  {
+    id: "model-philosophy",
+    title: "选模型哲学",
+    module: "module3",
+    notes: "选员工而非选天才。不同任务用不同模型，就像公司不同岗位招不同的人。",
+  },
+
+  // Section F: 工具全景（5张）
   {
     id: "tools-cover",
     title: "工具全景图",
@@ -214,7 +208,29 @@ export const slides: SlideConfig[] = [
     notes: "把所有工具串起来看：从想法到产品的完整工作流。",
   },
 
-  // Module 4: 清醒认知 (8 slides)
+  // Section G: Agent 进化（3张）— Act 3 的桥梁
+  {
+    id: "background-agent",
+    title: "Background Agent",
+    module: "module3",
+    notes: "展示Agent的进化方向：从你盯着它干，到它在后台自主工作。核心概念来自 background-agents.com。强调三个阶段的区别：in the seat → in the loop → on the loop。",
+  },
+  {
+    id: "agent-skill",
+    title: "Agent Skill",
+    module: "module3",
+    notes: "Agent Skill = 给AI装技能包。一个文件夹（SKILL.md + 脚本 + 资源），Agent按需加载。重点讲清MCP vs Skill的区别：MCP给数据（送食材），Skill教方法（给菜谱）。2025.12成为开放标准，20+平台采用。",
+  },
+  {
+    id: "agent-skill-architecture",
+    title: "渐进式披露",
+    module: "module3",
+    notes: "Skill的核心架构：三层渐进式加载——元数据层（始终加载，~100 tokens）、指令层（激活时加载）、资源层（按需读取/执行）。效果：Agent知道数百技能但上下文零浪费。生态已爆发：27万+技能、20+平台互通。",
+  },
+
+  // ═══════════════════════════════════════════
+  // ACT 3: 转 — "泼冷水"（7张）
+  // ═══════════════════════════════════════════
   {
     id: "risks-cover",
     title: "不灌鸡汤",
@@ -249,7 +265,7 @@ export const slides: SlideConfig[] = [
     id: "agent-beyond-code",
     title: "Agent 不只写代码",
     module: "module4",
-    notes: "2026年2月，Claude+Palantir在军事行动中完成了完整Agent Loop，11分23秒。与Agentic Loop完全相同的模式，但作用域从代码变成了现实世界。引导学生思考：技术无善恶，使用者的判断力决定它是工具还是武器。",
+    notes: "2026年2月，Claude+Palantir在军事行动中完成了完整Agent Loop。与Agentic Loop完全相同的模式，但作用域从代码变成了现实世界。引导学生思考：技术无善恶，使用者的判断力决定它是工具还是武器。",
   },
   {
     id: "real-value",
@@ -257,14 +273,10 @@ export const slides: SlideConfig[] = [
     module: "module4",
     notes: "这张表是全课的精华之一。左边是大家以为重要的，右边是真正重要的。",
   },
-  {
-    id: "context-engineering",
-    title: "Context Engineering",
-    module: "module4",
-    notes: "用精准自然语言描述需求——这才是AI时代的核心技能。展示模糊vs精准prompt对比。",
-  },
 
-  // Ending (4 slides)
+  // ═══════════════════════════════════════════
+  // ACT 4: 合 — "带走什么"（4张）
+  // ═══════════════════════════════════════════
   {
     id: "ending-judgment",
     title: "一个判断",

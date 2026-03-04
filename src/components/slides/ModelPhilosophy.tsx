@@ -3,7 +3,7 @@ import { models } from "@/data/models";
 
 export function ModelPhilosophy() {
   return (
-    <div className="slide module-1 bg-[#0a0a0b] flex items-center justify-center">
+    <div className="slide module-3 bg-[#0a0a0b] flex items-center justify-center">
       <div className="text-center max-w-[1500px]">
         <AnimatedText delay={300}>
           <p className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#f5f5f5] leading-relaxed mb-8 lg:mb-16">

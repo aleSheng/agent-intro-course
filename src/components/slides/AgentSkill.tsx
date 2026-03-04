@@ -2,7 +2,7 @@ import { AnimatedText } from "@/components/shared/AnimatedText";
 
 export function AgentSkill() {
   return (
-    <div className="slide module-1 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
+    <div className="slide module-3 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
       <AnimatedText delay={200}>
         <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#f5f5f5] mb-3 self-start">
           Agent Skill：给 AI 装上"技能包"

@@ -4,7 +4,7 @@ const rows = [
   { think: "会写代码", real: "能把模糊需求拆解成清晰的、可执行的子任务" },
   { think: "熟悉某个框架的API", real: "能判断AI生成的100个方案里哪个最优、为什么" },
   { think: "打字快", real: "能用精准的自然语言描述你到底要什么" },
-  { think: "什么都自己干", real: "知道什么该交给AI、什么必须自己把关" },
+  { think: "什么都自己干", real: "持续试新工具，知道什么该交给AI、什么必须自己把关" },
 ];
 
 export function RealValue() {

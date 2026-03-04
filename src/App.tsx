@@ -50,42 +50,39 @@ import {
 } from "@/components/slides";
 
 const slideComponents: Record<string, () => ReactNode> = {
-  // Cover
+  // ACT 1: 起 — 颠覆认知
   cover: () => <Cover />,
   icebreaker: () => <Icebreaker />,
-  // Module 1
   "chatbot-vs-agent": () => <ChatbotVsAgent />,
   "one-liner": () => <OneLiner />,
   "agent-capabilities": () => <AgentCapabilities />,
-  "background-agent": () => <BackgroundAgent />,
-  "agent-skill": () => <AgentSkill />,
-  "agent-skill-architecture": () => <AgentSkillArchitecture />,
-  "model-overview": () => <ModelOverview />,
-  "model-multimodal": () => <ModelMultimodal />,
-  "model-philosophy": () => <ModelPhilosophy />,
-  // Module 2 - Section A: 终端智能体
-  "agent-intro": () => <Case1Cover />,
-  "agent-ecosystem": () => <Case1Workflow />,
   "agentic-loop": () => <Case1Loop />,
-  "agent-insight": () => <Case1Insight />,
-  // Module 2 - Section B: Vibe Coding
+  // ACT 2: 承 — 眼见为实
   "vibe-coding": () => <Case2Cover />,
   "vibe-coding-demo": () => <Case2Demo />,
   "vibe-coding-anyone": () => <Case4Flow />,
   "vibe-coding-insight": () => <Case2Insight />,
-  // Module 2 - Section C: Vibe Research
   "vibe-research": () => <Case3Cover />,
   "vibe-research-notebook": () => <Case3Notebook />,
   "vibe-research-kimi": () => <Case3Kimi />,
   "vibe-research-paper": () => <PaperWorkflow />,
   "vibe-research-insight": () => <Case3Insight />,
-  // Module 3
+  "context-engineering": () => <ContextEngineering />,
+  "agent-intro": () => <Case1Cover />,
+  "agent-ecosystem": () => <Case1Workflow />,
+  "agent-insight": () => <Case1Insight />,
+  "model-overview": () => <ModelOverview />,
+  "model-multimodal": () => <ModelMultimodal />,
+  "model-philosophy": () => <ModelPhilosophy />,
   "tools-cover": () => <ToolsCover />,
   "tools-terminal": () => <ToolsTerminal />,
   "tools-ide": () => <ToolsIDE />,
   "tools-nocode": () => <ToolsNocodeKnowledge />,
   "tools-landscape": () => <ToolsLandscape />,
-  // Module 4
+  "background-agent": () => <BackgroundAgent />,
+  "agent-skill": () => <AgentSkill />,
+  "agent-skill-architecture": () => <AgentSkillArchitecture />,
+  // ACT 3: 转 — 泼冷水
   "risks-cover": () => <RisksCover />,
   "risk-hallucination": () => <RiskHallucination />,
   "risk-permission": () => <RiskPermission />,
@@ -93,8 +90,7 @@ const slideComponents: Record<string, () => ReactNode> = {
   safety: () => <Safety />,
   "agent-beyond-code": () => <AgentBeyondCode />,
   "real-value": () => <RealValue />,
-  "context-engineering": () => <ContextEngineering />,
-  // Ending
+  // ACT 4: 合 — 带走什么
   "ending-judgment": () => <EndingJudgment />,
   "ending-action": () => <EndingAction />,
   "ending-quote": () => <EndingQuote />,

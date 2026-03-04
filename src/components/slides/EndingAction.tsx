@@ -35,7 +35,7 @@ export function EndingAction() {
 
         <AnimatedText delay={2800}>
           <p className="text-xl text-accent-cyan text-center mt-10 font-semibold">
-            第一次可能不完美，但你会发现——你已经有能力造东西了。
+            第一次可能很粗糙，但试过之后你就不一样了。
           </p>
         </AnimatedText>
       </div>

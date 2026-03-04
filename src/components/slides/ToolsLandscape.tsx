@@ -67,7 +67,7 @@ export function ToolsLandscape() {
       <AnimatedText delay={2000}>
         <div className="mt-12 text-center">
           <p className="text-xl text-accent-green font-semibold">
-            🎯 关键认知：没有"一个工具解决所有问题"，而是"每个阶段换最趁手的工具"
+            🎯 每个阶段都值得你试试不同的工具——用下来才知道哪把最趁手
           </p>
         </div>
       </AnimatedText>

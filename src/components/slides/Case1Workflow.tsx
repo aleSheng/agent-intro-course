@@ -14,14 +14,14 @@ const alternatives = [
     tag: "零门槛",
   },
   {
-    name: "Kimi Claw",
-    desc: "月之暗面出品，超长上下文",
+    name: "Gemini CLI",
+    desc: "Google 出品，百万级上下文",
     color: "#6366f1",
     tag: "长文档",
   },
   {
-    name: "MaxClaw",
-    desc: "极致自动化，端到端完成任务",
+    name: "云端 Agent",
+    desc: "无需本地环境，端到端完成任务",
     color: "#ef4444",
     tag: "重度使用",
   },
@@ -69,7 +69,7 @@ export function Case1Workflow() {
         <div className="mt-12 flex items-center gap-4">
           <div className="flex-1 h-px bg-gradient-to-r from-transparent via-accent-purple/30 to-transparent" />
           <p className="text-xl text-accent-purple font-semibold px-6">
-            关键不是用哪个工具，而是理解"人 + Agent"的协作模式
+            找到适合你的入口，先试起来——协作感会在实践中自然形成
           </p>
           <div className="flex-1 h-px bg-gradient-to-r from-transparent via-accent-purple/30 to-transparent" />
         </div>

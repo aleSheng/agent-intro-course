@@ -26,7 +26,7 @@ const stages = [
 
 export function BackgroundAgent() {
   return (
-    <div className="slide module-1 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
+    <div className="slide module-3 bg-[#0a0a0b] px-4 md:px-12 lg:px-20">
       <AnimatedText delay={200}>
         <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#f5f5f5] mb-4 self-start">
           下一步：<span className="text-accent-cyan">Background Agent</span>
@@ -72,8 +72,7 @@ export function BackgroundAgent() {
 
       <AnimatedText delay={1800}>
         <p className="text-lg text-[#71717a] mt-10 text-center w-full">
-          来源：<span className="font-mono text-[#a1a1aa]">background-agents.com</span>
-          {" "}—— "没有事件触发、没有审计日志、机器一睡眠就停，那不叫 Background Agent"
+          未来的 Agent 像员工一样 24 小时待命——你给方向，它在后台干活，完成了通知你审核
         </p>
       </AnimatedText>
     </div>
