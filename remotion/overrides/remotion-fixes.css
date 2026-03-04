@@ -1,0 +1,35 @@
+/*
+ * Remotion CSS overrides
+ * CSS animations are not frame-deterministic in Remotion.
+ * These classes set opacity:0 and rely on @keyframes to reveal elements.
+ * Override them to be immediately visible.
+ */
+.animate-fade-in-up,
+.animate-scale-in,
+.animate-slide-in-left {
+  opacity: 1 !important;
+  animation: none !important;
+  transform: none !important;
+}
+
+/*
+ * Fix .slide layout for Remotion:
+ * - 100dvh doesn't work in headless Chrome — use 100% instead
+ * - Ensure slides fill their AbsoluteFill parent
+ */
+.slide {
+  min-height: 100% !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+/* Disable floating particle animations */
+.particle {
+  animation: none !important;
+}
+
+/* Disable typewriter cursor blink */
+.typewriter-cursor::after {
+  animation: none !important;
+  opacity: 1 !important;
+}

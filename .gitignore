@@ -24,3 +24,10 @@ dist-ssr
 *.sw?
 
 docs/refer/
+
+# Video rendering output
+out/
+
+# Generated audio files (regenerate with: python scripts/generate-audio.py)
+public/audio/*.mp3
+public/audio/durations.json
