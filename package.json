@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "video:studio": "remotion studio remotion/index.ts",
     "video:render": "remotion render remotion/index.ts LectureVideo out/lecture.mp4 --codec h264",
-    "audio:generate": "python scripts/generate-audio.py"
+    "audio:generate": "/Users/yzlabmac/agentspace/voiceai/qwen_voice_skill/cli/.venv/bin/python scripts/generate-audio-qwen.py",
+    "audio:generate:edge": "python scripts/generate-audio.py"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.4",

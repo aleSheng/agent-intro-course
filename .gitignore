@@ -31,3 +31,5 @@ out/
 # Generated audio files (regenerate with: python scripts/generate-audio.py)
 public/audio/*.mp3
 public/audio/durations.json
+
+public/audio/

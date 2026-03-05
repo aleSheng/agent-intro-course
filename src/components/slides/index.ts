@@ -1,6 +1,7 @@
 // Cover
 export { Cover } from "./Cover";
 export { Icebreaker } from "./Icebreaker";
+export { ProofPeter } from "./ProofPeter";
 
 // Module 1: 从"会聊天"到"会干活"
 export { ChatbotVsAgent } from "./ChatbotVsAgent";

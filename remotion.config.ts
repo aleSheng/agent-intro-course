@@ -28,6 +28,11 @@ Config.overrideWebpackConfig((currentConfiguration) => {
         /components\/slides\/EndingQuote/,
         path.resolve(projectRoot, "remotion", "overrides", "EndingQuote.tsx")
       ),
+      // Replace EndingContact (uses import.meta.env.BASE_URL for QR code image)
+      new webpack.NormalModuleReplacementPlugin(
+        /components\/slides\/EndingContact/,
+        path.resolve(projectRoot, "remotion", "overrides", "EndingContact.tsx")
+      ),
     ],
   };
 

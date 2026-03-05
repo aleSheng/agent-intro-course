@@ -42,28 +42,22 @@ export const slides: SlideConfig[] = [
     notes: "先问：为了跟上AI，有多少人想过学编程？让大家举手。停顿3秒，观察反应。然后抛出暴论：跟上AI不需要学编程。最后一行是全课核心——'去试。找最新最好的工具，体验它，然后迭代自己。'——慢读，停顿让大家消化。",
   },
   {
+    id: "proof-peter",
+    title: "真人真事：I Ship Code I Don't Read",
+    module: "cover",
+    notes: "暴论的证据。Peter Steinberger（PSPDFKit创始人、资深iOS开发者）用AI Agent造出OpenClaw，代码自己没读过就发布了。连老程序员都不逐行读代码了——这就是'不需要学编程'的底气。",
+  },
+  {
     id: "chatbot-vs-agent",
     title: "ChatBot vs Agent",
     module: "module1",
-    notes: "左右分栏对比。强调Agent有'手'——能操作电脑、读写文件、执行命令。",
-  },
-  {
-    id: "one-liner",
-    title: "一句话区别",
-    module: "module1",
-    notes: "军师 vs 将军的比喻。让大家记住这个画面。",
-  },
-  {
-    id: "agent-capabilities",
-    title: "Agent 能做什么",
-    module: "module1",
-    notes: "逐步展示Agent的6个核心能力。每个能力举一个具体例子。",
+    notes: "左右分栏对比。强调Agent有'手'——能操作电脑、读写文件、执行命令。用军师vs将军比喻收尾。",
   },
   {
     id: "agentic-loop",
     title: "Agentic Loop",
     module: "module1",
-    notes: "这是Agent最核心的能力模式：写-测-错-改循环。Agent不怕出错，它会自己修。概念高潮——为后续实战铺路。",
+    notes: "先快速点出Agent六大能力（规划、调工具、读写文件、执行命令、搜索、修bug），然后聚焦核心模式：写-测-错-改循环。用具体例子说明。",
   },
 
   // ═══════════════════════════════════════════
@@ -161,19 +155,7 @@ export const slides: SlideConfig[] = [
     id: "model-overview",
     title: "基座模型速览",
     module: "module3",
-    notes: "讲完实战案例，转到底层引擎。快速过完6个模型（含 DeepSeek R1），重点是让大家知道'不止一个选择'。",
-  },
-  {
-    id: "model-multimodal",
-    title: "多模态模型",
-    module: "module3",
-    notes: "语言模型之外，还有语音、生图、生视频、多模态理解等模型。AI不只会写字，还会说话、画画、拍视频。这些能力与任何专业都相关，值得亲手试一试。",
-  },
-  {
-    id: "model-philosophy",
-    title: "选模型哲学",
-    module: "module3",
-    notes: "选员工而非选天才。不同任务用不同模型，就像公司不同岗位招不同的人。",
+    notes: "快速过完主流模型，含多模态（语音/图像/视频），重点是'不止一个ChatGPT，按需换脑子'。",
   },
 
   // Section F: 工具全景（5张）
@@ -219,13 +201,7 @@ export const slides: SlideConfig[] = [
     id: "agent-skill",
     title: "Agent Skill",
     module: "module3",
-    notes: "Agent Skill = 给AI装技能包。一个文件夹（SKILL.md + 脚本 + 资源），Agent按需加载。重点讲清MCP vs Skill的区别：MCP给数据（送食材），Skill教方法（给菜谱）。2025.12成为开放标准，20+平台采用。",
-  },
-  {
-    id: "agent-skill-architecture",
-    title: "渐进式披露",
-    module: "module3",
-    notes: "Skill的核心架构：三层渐进式加载——元数据层（始终加载，~100 tokens）、指令层（激活时加载）、资源层（按需读取/执行）。效果：Agent知道数百技能但上下文零浪费。生态已爆发：27万+技能、20+平台互通。",
+    notes: "Agent Skill = 给AI装技能包。MCP给数据（送食材），Skill教方法（给菜谱）。三层渐进加载，27万+技能生态。简明扼要讲完。",
   },
 
   // ═══════════════════════════════════════════

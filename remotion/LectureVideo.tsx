@@ -9,15 +9,11 @@ import { TRANSITION_FRAMES } from "./config";
 import {
   Cover,
   Icebreaker,
+  ProofPeter,
   ChatbotVsAgent,
-  OneLiner,
-  AgentCapabilities,
   BackgroundAgent,
   AgentSkill,
-  AgentSkillArchitecture,
   ModelOverview,
-  ModelMultimodal,
-  ModelPhilosophy,
   Case1Cover,
   Case1Workflow,
   Case1Loop,
@@ -52,14 +48,13 @@ import {
 
 // Ordered slide components matching slides[] from src/data/slides.ts
 const slideComponents: React.FC[] = [
-  // ACT 1: 起 — 颠覆认知（6张）
+  // ACT 1: 起 — 颠覆认知（5张）
   Cover,
   Icebreaker,
+  ProofPeter,
   ChatbotVsAgent,
-  OneLiner,
-  AgentCapabilities,
-  Case1Loop,          // agentic-loop: 从 ACT2 提前至此
-  // ACT 2: 承 — 眼见为实（24张）
+  Case1Loop,          // agentic-loop
+  // ACT 2: 承 — 眼见为实（21张）
   Case2Cover,         // vibe-coding
   Case2Demo,          // vibe-coding-demo
   Case4Flow,          // vibe-coding-anyone
@@ -69,21 +64,18 @@ const slideComponents: React.FC[] = [
   Case3Kimi,          // vibe-research-kimi
   PaperWorkflow,      // vibe-research-paper
   Case3Insight,       // vibe-research-insight
-  ContextEngineering, // context-engineering (方法论)
+  ContextEngineering, // context-engineering
   Case1Cover,         // agent-intro
   Case1Workflow,      // agent-ecosystem
   Case1Insight,       // agent-insight
-  ModelOverview,      // model-overview
-  ModelMultimodal,    // model-multimodal
-  ModelPhilosophy,    // model-philosophy
+  ModelOverview,      // model-overview (含多模态+选模型哲学)
   ToolsCover,         // tools-cover
   ToolsTerminal,      // tools-terminal
   ToolsIDE,           // tools-ide
   ToolsNocodeKnowledge, // tools-nocode
   ToolsLandscape,     // tools-landscape
-  BackgroundAgent,    // background-agent (进化桥梁)
-  AgentSkill,         // agent-skill
-  AgentSkillArchitecture, // agent-skill-architecture
+  BackgroundAgent,    // background-agent
+  AgentSkill,         // agent-skill (含架构)
   // ACT 3: 转 — 泼冷水（7张）
   RisksCover,
   RiskHallucination,
@@ -162,7 +154,7 @@ export const LectureVideo: React.FC<LectureVideoProps> = ({ durations }) => {
           layout="none"
         >
           <Audio
-            src={staticFile(`audio/slide-${String(i).padStart(2, "0")}.mp3`)}
+            src={staticFile(`audio/slide-${String(i).padStart(2, "0")}.wav`)}
           />
         </Sequence>
       ))}
