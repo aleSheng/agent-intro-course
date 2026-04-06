@@ -48,6 +48,12 @@ export const slides: SlideConfig[] = [
     notes: "暴论的证据。Peter Steinberger（PSPDFKit创始人、资深iOS开发者）用AI Agent造出OpenClaw，代码自己没读过就发布了。连老程序员都不逐行读代码了——这就是'不需要学编程'的底气。",
   },
   {
+    id: "industry-narrative",
+    title: "软件吃掉世界 → AI吃掉软件",
+    module: "module1",
+    notes: "三段式时间线：2011 Andreessen预言软件吃掉世界→2017 黄仁勋说AI吃掉软件→2026 SaaSpocalypse成为现实。底部用数据佐证：Copilot生成46%代码、Cursor三个月翻倍、智能成本每年降10倍。收口：不是程序员被取代，而是会用AI的人取代不会用的人。",
+  },
+  {
     id: "chatbot-vs-agent",
     title: "ChatBot vs Agent",
     module: "module1",
@@ -156,6 +162,19 @@ export const slides: SlideConfig[] = [
     title: "基座模型速览",
     module: "module3",
     notes: "快速过完主流模型，含多模态（语音/图像/视频），重点是'不止一个ChatGPT，按需换脑子'。",
+  },
+
+  {
+    id: "ai-rivalry",
+    title: "一场理念分裂：OpenAI vs Anthropic",
+    module: "module3",
+    notes: "行业八卦时间。左右对比：OpenAI（快速迭代、宫斗、安全团队出走、Musk诉讼）vs Anthropic（Dario出走创业、Constitutional AI、企业市场份额从10%到65%）。底部点出大厂代理人战争：Microsoft/Amazon/Nvidia同时投两家，Bloomberg说'他们一直在互相付钱'。",
+  },
+  {
+    id: "deepseek-legend",
+    title: "DeepSeek 传奇",
+    module: "module3",
+    notes: "$600万 vs $1100亿的戏剧性对比。量化基金做AI、MIT开源、公开训练论文、登顶iOS免费榜、Nvidia暴跌18%。V4专为华为昇腾优化——绕开出口管制。中国开源模型下载量已超美国。收口：没有永远的王者，只有永远的竞争。",
   },
 
   // Section F: 工具全景（5张）

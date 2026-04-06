@@ -2,6 +2,7 @@
 export { Cover } from "./Cover";
 export { Icebreaker } from "./Icebreaker";
 export { ProofPeter } from "./ProofPeter";
+export { IndustryNarrative } from "./IndustryNarrative";
 
 // Module 1: 从"会聊天"到"会干活"
 export { ChatbotVsAgent } from "./ChatbotVsAgent";
@@ -11,6 +12,8 @@ export { BackgroundAgent } from "./BackgroundAgent";
 export { AgentSkill } from "./AgentSkill";
 export { AgentSkillArchitecture } from "./AgentSkillArchitecture";
 export { ModelOverview } from "./ModelOverview";
+export { AIRivalry } from "./AIRivalry";
+export { DeepSeekLegend } from "./DeepSeekLegend";
 export { ModelMultimodal } from "./ModelMultimodal";
 export { ModelPhilosophy } from "./ModelPhilosophy";
 
